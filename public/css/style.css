@@ -1,0 +1,447 @@
+
+html,
+body {
+    background-image: url("../images/bodybg.png");
+    background-repeat: repeat-y;
+    font-size: 16px;
+    color: #797979;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 400;
+    width:100%;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f2f2f2;
+}
+
+
+/*------------------------------------------------------------------*/
+/*   IE10 in Windows 8 and Windows Phone 8 Bug fix
+/*-----------------------------------------------------------------*/
+
+    @-webkit-viewport { width: device-width; }
+    @-moz-viewport { width: device-width; }
+    @-ms-viewport { width: device-width; }
+    @-o-viewport { width: device-width; }
+    @viewport { width: device-width; }
+
+
+
+/*  ========     Page Content     ========
+    ====================== */
+    .page-content, 
+    section { overflow: hidden; }
+
+
+    img {
+        max-width: 100%;
+    }
+
+    .page-section {
+        width: 100%;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        padding: 130px 0;
+    }
+
+    .title-section {
+        font-size: 42px;
+    }
+
+    .title-regular {
+        font-weight: 500;
+        color: #333;
+    }
+
+    h1{
+        font-family: 'Oxygen', sans-serif;
+        margin-top: 0px;
+        font-weight: 600;
+        color: #5b81ec;
+    }
+
+
+/*  ======== Footer Section style ========
+    ============================== */
+    nav.navbar.bootsnav.footer-menu{
+        background-color: transparent;
+        border-bottom: 0px;
+    }
+    nav.navbar.bootsnav.footer-menu ul li a{
+        color:#b5b5c8;
+    }
+    nav.navbar.bootsnav.footer-menu ul li a:hover{
+        color:#fff;
+    }
+    .divider{
+        margin-top: 3%;
+        width:100%;
+        height: 1px;
+        background-color: #434769;
+        display: inline-block;
+    }
+    .main_footer{
+        overflow: hidden;
+    }
+
+    .main_footer i {
+        padding: 0px 5px;
+        color: #ff0000;
+    }
+
+    .bg-black{background-color: #353854;}
+
+    /* End footer */
+
+
+/*  ========   Scroll Up style    ========
+    ============================== */
+    .scrollup {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        opacity: .3;
+        position: fixed;
+        bottom: 20px;
+        right: 25px;
+        color: #fff;
+        cursor: pointer;
+        background-color: #000;
+        z-index: 1000;
+        transition: opacity .5s, background-color .5s;
+        -moz-transition: opacity .5s, background-color .5s;
+        -webkit-transition: opacity .5s, background-color .5s;
+    }
+
+    .scrollup i {
+        font-size: 13px;
+        position: absolute;
+        opacity: 1;
+        color: #fff;
+        left: 50%;
+        top: 50%;
+        margin-top: -7px;
+        margin-left: -6px;
+        text-decoration: none;
+    }
+
+    .scrollup:hover {
+        background-color: blueviolet;
+        color:#fff;
+    }
+    /* End Scroll Up */
+
+
+/*  ========     About Section    ========
+    ====================================== */
+
+    .intro .fa {
+        display: block;
+        font-size: 42px;
+        color: #5b81ec;
+    }
+
+    .intro label {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .intro label strong {
+        font-size: 52px;
+    }
+
+
+/*  ========      OAs Section     ========
+    ====================================== */
+    .block-oa{
+        width: 100%;
+    }
+
+    .font-infos{
+        font-family: 'Helvetica';
+        font-size: 1em;
+        color: white;        
+    }
+
+
+
+    .button-more{
+        margin-left: 35%;
+        background-color: #667dd1;
+        position: absolute;
+        padding: 0.7em 2em; 
+        border-radius: 10px; 
+        color: white;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 1em;
+    }
+    
+
+
+    .action_block{
+        margin-bottom: 30px;
+    }     
+
+    .action_block button{
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    .estrelas{
+        margin-top: 15px;
+    }
+
+    .estrelas input[type=radio]{
+        display: none;
+    }
+    .estrelas label i.fa:before{
+        content: '\f005';
+        color: #FC0;
+        font-family:FontAwesome;
+        font-size:18px;
+        margin-left: -5px;
+    }
+    .estrelas input[type=radio]:checked  ~ label i.fa:before{
+        color: #CCC;
+    }
+
+    #stars{
+        display: none;
+    }
+
+
+
+
+/*  ========     Types Section    ========
+    =========================================== */
+
+    .feature-box {
+        padding: 15px 0;
+    }
+
+    .feature-box h4 {
+        margin: 0;
+    }
+
+    .feature-box .feature-box-icon {
+        background: #5b81ec;
+        border-radius: 35px;
+        color: #FFF;
+        display: inline-block;
+        float: left;
+        height: 35px;
+        line-height: 35px;
+        margin-right: 10px;
+        position: relative;
+        text-align: center;
+        width: 35px;
+    }
+
+
+    .objects-font{
+        font-family: 'Oxygen', sans-serif;
+        margin-top: 0px;
+        font-weight: 600;
+        color: #333;
+        font-size: 17px;
+        line-height: 14px;
+    }
+
+    .see-objects-font {
+        font-size: 14px;
+        line-height: 25px;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #7a7c82;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+
+    .title-underline {
+        height: 3px;
+        width: 70px;
+        background-color: #5b81ec;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+    }
+
+    .explore-select{
+        -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+       -moz-appearance: none; /* Remove estilo padrão do FireFox */
+       appearance: none; /* Remove estilo padrão do FireFox*/
+       background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeeeee;  /* Imagem de fundo (Seta) */
+       background-position: right;  /*Posição da imagem do background*/
+       border:1px solid #ddd;
+       font-family: 'Open Sans', sans-serif;
+    }
+
+
+    /* STYLE CONTACT PAGE */
+
+    .box-contact{
+        border: 0.1em solid #d3d3d3;
+        background-color: #f3f3f3;
+        height:230px;
+    }
+    
+    
+    .contact-icons{
+        background-size: 100%;
+        background-size: cover;
+        width: 20%;
+    }
+    
+    .text-contact {
+        font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    /* FILTROS DE BUSCA - EXPLORE */
+    .menu-search {
+        background-color: #a9bdf6;
+        color: white;
+        padding: 0.3em;
+        border: 0.1em solid #bebebe;
+    }
+
+    .active{
+        background-color: #6686e0;
+    }
+
+    /* BLOCO DO RECURSO */
+    .block-level {
+        background-color: #4a6bc9;
+        height: 30px;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        padding-top: 2px;
+    }
+
+    .object_block{
+        border-left: 0.15em solid #4a6bc9;
+        border-bottom: 0.15em solid #4a6bc9;
+        border-right: 0.15em solid #4a6bc9;
+    }
+
+    .image-recurso{
+        width: 180px;
+        height: 180px; 
+        border-radius: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        filter: drop-shadow(0px 0px 4px #667dd1);
+       
+    }
+
+    .image-recurso-acessar{
+        width: 180px;
+        height: 180px; 
+        border-radius: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .block-title{
+        background-color: white;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        color: #082158;
+        height: 4.2em;
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .font-title{
+        font-size: 1.1em;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .button-save {
+        font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
+        color: #082158;
+        background-color: white;
+        background-size: 140px 30px;
+        background-repeat:no-repeat;
+        width: 150px;
+        height: 36px;
+        border: 0.1em solid rgb(226, 225, 225);
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .button-active:hover{
+        background-image:url('../images/save-button3.png');
+        background-size: 100% 100%; 
+    }
+
+    .button-active {
+        background-image:url('../images/save-button2.png');
+    }
+
+    .button-deactivated {
+        background-image:url('../images/saved-button.png'); 
+        cursor: default;       
+    }
+
+    .more-info-icon {
+        background-color: white;
+        border-radius: 100%;
+        width: 37px;
+        height: 37px;
+        background-image:url('../images/icon-info.png');
+        background-size: 100% 100%;
+        background-repeat:no-repeat;
+        cursor: pointer;
+    }
+
+    .more-info-icon:hover{
+        background-image:url('../images/icon-info2.png');
+        background-size: 100% 100%;
+    }
+
+
+    .object-save {
+        background-image:url('../images/pageSaved-button.png'); 
+        cursor: default;
+        font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
+        color: #082158;
+        background-color: white;
+        background-size: 70px 30px;
+        background-repeat:no-repeat;
+        width: 75px;
+        height: 36px;
+        border: 0.1em solid rgb(226, 225, 225);
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .object-save:hover {
+        background-image:url('../images/pageSaved-button-delete.png'); 
+        cursor: pointer;        
+    }
+
+    .object-eval{
+        background-image:url('../images/pageSaved-buttonEval.png'); 
+        cursor: default;
+        font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
+        color: #082158;
+        background-color: white;
+        background-size: 90px 30px;
+        background-repeat:no-repeat;
+        width: 95px;
+        height: 36px;
+        border: 0.1em solid rgb(226, 225, 225);
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .object-eval:hover {
+        background-image:url('../images/pageSaved-buttonEval-delete.png');      
+        cursor: pointer;   
+    }
