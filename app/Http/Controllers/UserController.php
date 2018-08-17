@@ -30,7 +30,7 @@ class UserController extends Controller
         // recupera historico de atividades efetuadas
         $activities = $logBook->where('id_user', '=', $idUser)->orderBy('created_at', 'desc')->paginate(10);
 
-        return View('\client\client_historic', compact('activities'));
+        return View('\client\clientHistoric', compact('activities'));
 
     }
 
