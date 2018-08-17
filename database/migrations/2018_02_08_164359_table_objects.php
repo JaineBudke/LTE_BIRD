@@ -26,7 +26,6 @@ class TableObjects extends Migration
             $table->boolean('requested');
             $table->boolean('status')->nullable($value = true);
             $table->integer('id_user');
-            $table->foreign('id_user')->references('id')->on('users');
             $table->timestamps();
         });
     }

@@ -17,7 +17,6 @@ class TableThematicUnit extends Migration
             $table->increments('id');
             $table->string('thematic');
             $table->integer('id_object')->unsigned();            
-            $table->foreign('id_object')->references('id')->on('objects');
             $table->timestamps();
             
         });

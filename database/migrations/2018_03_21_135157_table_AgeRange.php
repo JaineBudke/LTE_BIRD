@@ -17,7 +17,7 @@ class TableAgeRange extends Migration
             $table->increments('id');
             $table->string('age');
             $table->integer('id_object')->unsigned();            
-            $table->foreign('id_object')->references('id')->on('objects');
+            
             $table->timestamps();
             
         });

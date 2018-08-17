@@ -16,9 +16,9 @@ class TableSavedObjects extends Migration
         Schema::create('saved_objects', function( Blueprint $table ){
             $table->increments('id');
             $table->integer('id_object');
-            $table->foreign('id_object')->references('id')->on('objects');            
+                        
             $table->integer('id_user')->unsigned();            
-            $table->foreign('id_user')->references('id')->on('users');
+            
             $table->timestamps();
             
         });
