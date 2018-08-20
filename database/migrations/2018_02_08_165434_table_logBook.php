@@ -18,9 +18,7 @@ class TableLogBook extends Migration
             $table->string('event');
             $table->timestamps();
             $table->integer('id_user')->unsigned();            
-            $table->foreign('id_user')->references('id')->on('users');
             $table->integer('id_object')->unsigned();            
-            $table->foreign('id_object')->references('id')->on('objects');
         });
     }
 
