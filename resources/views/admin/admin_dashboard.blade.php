@@ -48,7 +48,7 @@
                     </div>
                 </div>
             </div>
-            <p>Please wait...</p>
+            <p>Estamos quase prontos!</p>
         </div>
     </div>
     <!-- #END# Page Loader -->
@@ -88,7 +88,7 @@
                                 <a href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
                                                 document.getElementById('logout-form').submit();">
-                                    Logout
+                                    Sair
                                 </a>
 
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -139,7 +139,7 @@
             <!-- Footer -->
             <div class="legal">
                 <div class="copyright">
-                    &copy; 2017 LTE - BIRD
+                    &copy; 2018 LTE - BIRD
                 </div>
             </div>
             <!-- #Footer -->

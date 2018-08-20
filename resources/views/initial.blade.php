@@ -29,7 +29,7 @@
                     <div>
                         <i class="fa fa-desktop"></i>
                         <label><strong>{{ $obj_count }}</strong>
-                            <br/>REDs adicionados</label>
+                            <br/>Recursos adicionados</label>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">

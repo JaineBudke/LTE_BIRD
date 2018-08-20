@@ -49,7 +49,7 @@ Route::group(['middleware' => ['auth', 'auth.admin']], function () {
 
     // redirecionar para a página de registro de recurso
     Route::get('/admin/cadastrar', function () {
-        return view('\admin\register_form');
+        return view('/admin/register_form');
     });
 
     // listar todos os recursos ativos cadastrados no sistema

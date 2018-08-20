@@ -62,11 +62,11 @@
                             <li>
                                 @if (Auth::user()->admin == 0)
                                 <a href="{{ url('dashboard') }}">
-                                    Dashboard
+                                    Área pessoal
                                 </a>
                                 @else 
                                 <a href="{{ url('admin') }}">
-                                    Dashboard
+                                    Área pessoal
                                 </a>
                                 @endif
                             </li>
@@ -75,7 +75,7 @@
                                 <a href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
-                                    Logout
+                                    Sair
                                 </a>
 
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
