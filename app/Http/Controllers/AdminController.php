@@ -28,7 +28,7 @@ class AdminController extends Controller
         // recupera historico de atividades efetuadas
         $activities = $logBook->join('users', 'users.id', '=', 'log_book.id_user')->orderBy('log_book.created_at', 'desc')->paginate(10);
         
-        return View('\admin\admin_initial', compact('activities'));
+        return View('/admin/admin_initial', compact('activities'));
 
     }
 
@@ -58,7 +58,7 @@ class AdminController extends Controller
         
         $objects = $objectContrl->objectList();
 
-        return View('\admin\list', compact('objects'));
+        return View('/admin/list', compact('objects'));
         
     }
 

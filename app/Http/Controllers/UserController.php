@@ -30,7 +30,7 @@ class UserController extends Controller
         // recupera historico de atividades efetuadas
         $activities = $logBook->where('id_user', '=', $idUser)->orderBy('created_at', 'desc')->paginate(10);
 
-        return View('\client\clientHistoric', compact('activities'));
+        return View('/client/clientHistoric', compact('activities'));
 
     }
 
@@ -141,7 +141,7 @@ class UserController extends Controller
             ['objects.id_user', $idUser],
         ])->paginate(10);
         
-        return View('\client\client_myObjects', compact('objects'));
+        return View('/client/client_myObjects', compact('objects'));
 
     }   
 
@@ -192,15 +192,14 @@ class UserController extends Controller
 
     /**
      * Lista objetos salvos pelo usuário atualmente logado no sistema
-     * @return Objetos salvos e avaliações dos objetos
+     * @return Objetos salvos
      */
     public function listSaveObjects( ){
         
         // instancia de object
         $saved_object = new Saved_object();
         $logBook = new Log_book();
-        $evaluations = new evaluation_object();
-
+        
         // recupera ID do usuario logado
         $idUser = auth()->user()->id;
 
@@ -211,9 +210,7 @@ class UserController extends Controller
                     ->paginate(4);
         $historic = $logBook->where('log_book.id_user', '=', $idUser)->get();
         
-        $evaluations = $evaluations->where('object_evaluation.id_user', '=', $idUser)->get();
-
-        return View('/client/client_initial', compact('objects', 'historic', 'evaluations'));
+        return View('/client/client_initial', compact('objects', 'historic'));
         
     }
         
