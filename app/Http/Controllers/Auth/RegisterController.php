@@ -74,6 +74,7 @@ class RegisterController extends Controller
             'gender' => null,
             'state' => null,
             'city' => null,
+	    'status' => 1,
         ]);
     }
 }

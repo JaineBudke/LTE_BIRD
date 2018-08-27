@@ -20,15 +20,6 @@
 <li class="">
 @endsection
 
-@section('profile_image')
-<?php 
-    $link = '..\..\storage\app\public\users\\'.Auth::user()->image;
-?>
-<img src="{{ $link }}" width="48" height="48">
-@endsection
-
-
-
 @section('profile')
 <section class="content" style="background-color: white">
     <br><br>
@@ -39,9 +30,9 @@
             <div class="form-line">
                 @if( Auth::user()->image != NULL )
                     <?php 
-                        $link = '..\..\storage\app\public\users\\'.Auth::user()->image;
+                        $link = 'storage/users/'.Auth::user()->image;
                     ?>
-                    <img src="{{ $link }}" width="150" height="150">
+                    <img src="{{ asset($link) }}" width="150" height="150">
                 @else 
                     <img src="{{ asset('images/user.png') }}" width="150" height="150" alt="User" />
                 @endif

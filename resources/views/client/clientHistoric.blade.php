@@ -20,12 +20,6 @@
 <li class="">
 @endsection
 
-@section('profile_image')
-<?php 
-    $link = '..\..\storage\app\public\users\\'.Auth::user()->image;
-?>
-<img src="{{ $link }}" width="48" height="48">
-@endsection
 
 @section('historic')
 <section class="content">

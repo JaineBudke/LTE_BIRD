@@ -77,13 +77,13 @@
                                 <div class="row block-level"><center>{{ $str_nivel }}</center></div>
         
                                 <?php 
-                                    $link = '..\storage\app\public\objects\\'.$object->image;
+                                    $link = 'storage/objects/'.$object->image;
                                     $count++;
                                 ?>
                                 
                                 <div class="row">
-                                    <center><a href="{{ $object->link }}">
-                                        <img class="image-recurso" onmouseover="swapImage(this)" src="{{ $link }}" />
+                                    <center><a target="_blank" href="{{ $object->link }}">
+                                        <img class="image-recurso" onmouseover="swapImage(this)" src="{{ asset($link) }}" />
                                         <img class="image-recurso-acessar" onmouseleave="swapImageAgain(this)"  src="{{ asset('images/acessar_recurso.png') }}" style="display: none"/>							
                                     </a></center>
                                 </div>

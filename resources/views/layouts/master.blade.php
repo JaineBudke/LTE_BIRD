@@ -136,9 +136,9 @@
 
                             <div class="attr-nav">
                                 <ul>
-                                    <li><a href="https://www.facebook.com/LTEUFRN/?fref=ts"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-flickr"></i></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCOGVnSKl9elC1e26wJibG3w"><i class="fa fa-youtube-play"></i></a></li>
+                                    <li><a target="_blank" href="https://www.facebook.com/LTEUFRN/?fref=ts"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a target="_blank" href="https://www.flickr.com/photos/154459499@N08/albums"><i class="fa fa-flickr"></i></a></li>
+                                    <li><a target="_blank" href="https://www.youtube.com/channel/UCOGVnSKl9elC1e26wJibG3w"><i class="fa fa-youtube-play"></i></a></li>
                                 </ul>
                             </div>        
 

@@ -56,7 +56,11 @@ class UserController extends Controller
         
         $idUser = auth()->user()->id;
         
-        DB::table('users')->where('id', '=', $idUser)->delete();
+	$user = User::findOrFail($idUser);
+        $user->status = 0;
+        $user->update();
+ 
+	// DB::table('users')->where('id', '=', $idUser)->delete();
 
         return Redirect::to('/');
         

@@ -67,9 +67,9 @@
                                             <div class="form-line">
                                                 @if( $object->image != '' )
                                                     <?php 
-                                                        $link = '..\..\..\storage\app\public\objects\\'.$object->image;
+                                                        $link = 'storage/objects/'.$object->image;
                                                     ?>
-                                                    <img src="{{ $link }}" width="100" height="100">
+                                                    <img src="{{ asset($link) }}" width="100" height="100">
                                                 @else 
                                                     <img src="{{ asset('images/padrao-objeto.jpg') }}" width="100" height="100">
                                                 @endif

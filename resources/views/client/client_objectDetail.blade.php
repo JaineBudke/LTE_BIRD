@@ -20,12 +20,6 @@
 <li class="">
 @endsection
 
-@section('profile_image')
-<?php 
-    $link = '..\..\..\storage\app\public\users\\'.Auth::user()->image;
-?>
-<img src="{{ $link }}" width="48" height="48">
-@endsection
 
 @section('profile')
 <section class="content" style="background-color: white">
@@ -36,9 +30,9 @@
            
             @if( $object->image != '' )
                 <?php 
-                    $link = '..\..\..\storage\app\public\objects\\'.$object->image;
+                    $link = 'storage/objects/'.$object->image;
                 ?>
-                <img src="{{ $link }}" width="150" height="150">
+                <img src="{{ asset($link) }}" width="150" height="150">
             @else 
                 <img src="{{ asset('images/padrao-objeto.jpg') }}" width="150" height="150">
             @endif

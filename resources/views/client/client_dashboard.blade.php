@@ -129,9 +129,16 @@
             <div class="user-info">
                 <div class="image">
 
+		
+
                 @if( Auth::user()->image != NULL )
                     
-                    @yield('profile_image')
+   		    <?php
+                        $profile_image = 'storage/users/'.Auth::user()->image;
+                    ?>
+    
+		    <img src="{{ asset( $profile_image ) }}" width="50" height="50"/>
+                    
 
                 @else 
                     <img src="{{ asset('images/user.png') }}" width="48" height="48" alt="User" />

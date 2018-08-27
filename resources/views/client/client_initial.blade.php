@@ -20,13 +20,6 @@
 <li class="">
 @endsection
 
-@section('profile_image')
-<?php 
-    $link = '..\storage\app\public\users\\'.Auth::user()->image;
-?>
-<img src="{{ $link }}" width="48" height="48">
-@endsection
-
 
 
 @section('initial')
@@ -57,11 +50,12 @@
 
 					@if( $object->image != '' )
 						<?php 
-							$link = '..\storage\app\public\objects\\'.$object->image;
+							$link = 'storage/objects/'.$object->image;
+
 						?>
 						<div class="row">
 							<center><a href="{{ $object->link }}">
-								<img class="image-recurso" onmouseover="swapImage(this)" src="{{ $link }}" />
+								<img class="image-recurso" onmouseover="swapImage(this)" src="{{ asset($link) }}" />
 								<img class="image-recurso-acessar" onmouseleave="swapImageAgain(this)"  src="{{ asset('images/acessar_recurso.png') }}" style="display: none"/>							
 							</a></center>
 						</div>
