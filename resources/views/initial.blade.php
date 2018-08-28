@@ -80,7 +80,7 @@
                             <div class="row">
                                 <center><a target="_blank" href="{{ $object->link }}">
                                     <img class="image-recurso" onmouseover="swapImage(this)" src="{{ asset($link) }}" />
-                                    <img class="image-recurso-acessar" onmouseleave="swapImageAgain(this)"  src="{{ asset('images/acessar_recurso.png') }}" style="display: none"/>							
+                                    <!--<img class="image-recurso-acessar" onmouseleave="swapImageAgain(this)"  src="{{ asset('images/acessar_recurso.png') }}" style="display: none"/>-->							
                                 </a></center>
                             </div>
     
