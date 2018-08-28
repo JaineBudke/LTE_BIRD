@@ -27,14 +27,14 @@
                 <div class="col-md-3 col-sm-6"></div>
                 <div class="col-md-3 col-sm-6">
                     <div>
-                        <i class="fa fa-folder" style="color: #fd840d"></i>
+                        <i class="fa fa-folder" style="color: #fd840d; font-size: 5em"></i>
                         <label><h4 style="font-size: 2em">{{ $obj_count }}</h4>
                             Recursos adicionados</label>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div>
-                        <i class="fa fa-users" style="color: #fd840d"></i>
+                        <i class="fa fa-users" style="color: #fd840d; font-size: 5em"></i>
                         <label><h4 style="font-size: 2em">{{ $users_count }}</h4>
                         Usuários cadastrados</label>
                     </div>
