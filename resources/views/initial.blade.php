@@ -52,7 +52,7 @@
     <div class="col-md-12" style="margin-top: 1.5em">
         <div class="mais-acessados container">
             <br><br>
-            <center><h2 class="title-section"><span class="title-regular">Recursos</span> Populares</h2></center>
+            <center><h2 class="title-section"><span class="title-regular">Recursos Populares</span></h2></center>
             
 
             <div class="col-md-12">
@@ -69,7 +69,7 @@
 
                         @foreach( $objects as $object )
                         
-                        <div class="col-md-3" style="border: 0.2em solid white; background-color: white">
+                        <div class="col-md-3" style="">
     
                            
                             <?php 
@@ -94,10 +94,11 @@
                              <div>
                                     <center><h6 class="font-title block-title">{{ $object->title }}</h6></center>
                                     <form method="post" action="{{ url( $url ) }}">
-                                        <div class="row">
+                                        <div class="row" style="margin-top: -30px">
                                             <center>
                                                 <?php $saved_obj = false;  ?>
-                                                <div class="col-md-9">
+                                                <div class="col-md-3"></div>
+                                                <div class="col-md-3">
                                                 @if( Auth::check() )
                                                     @foreach( $saved_object as $saved )
                                                         @if( $saved != null )
@@ -116,14 +117,14 @@
 
                                                     <!--<button class="button-save button-deactivated" type="button"></button>-->
                                                 @endif
-        
+            
                                                 </div>
         
                                                 <?php 
                                                     $id_block = 'more-info'.$count;
                                                     ?>
-                                                <div onclick="objectDetail( {{ $id_block }} )" class="col-md-2 more-info-icon"></div>
-        
+                                                <div onclick="objectDetail( {{ $id_block }} )" class="col-md-2 more-info-icon"><i class="fa fa-info-circle" style="color: #fd840d; font-size: 2em"></i></div>
+
                                                 
                                                 <div id="{{ $id_block }}" title="{{ $object->title }}" style="display: none">
                                                     <h5>Nível de Ensino:</h5>
