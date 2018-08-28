@@ -28,7 +28,7 @@ class HomeController extends Controller
         $objects = $object->where([
                             ['objects.status', 1],
                             ['objects.requested', 0],
-                            ])->orderBy('evaluation', 'desc')->paginate(8);
+                            ])->orderBy('evaluation', 'desc')->paginate(4);
 
 
         if( Auth::check() ){
