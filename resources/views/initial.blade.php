@@ -24,22 +24,22 @@
         </div>
         <div class="row text-center">
             <div>
-                <div class="col-md-3 col-sm-6"></div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-2 col-sm-6"></div>
+                <div class="col-md-4 col-sm-6">
                     <div>
                         <i class="fa fa-folder" style="color: #fd840d; font-size: 5em"></i>
                         <label><h4 style="font-size: 2em">{{ $obj_count }}</h4>
                             Recursos adicionados</label>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-4 col-sm-6">
                     <div>
                         <i class="fa fa-users" style="color: #fd840d; font-size: 5em"></i>
                         <label><h4 style="font-size: 2em">{{ $users_count }}</h4>
                         Usuários cadastrados</label>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6"></div>
+                <div class="col-md-2 col-sm-6"></div>
             </div>
         </div>
     </div>
@@ -110,10 +110,10 @@
                                                 @endif
         
                                                 @if( $saved_obj == false )
-                                                    <button class="button-save" type="submit"><i class="fa fa-save" style="color: #fd840d; font-size: 1.5em"></i></button>
+                                                    <button class="button-save" type="submit"><i class="fa fa-save" style="color: #4d4d4d; font-size: 1.5em"></i></button>
                                                     <!--button class="button-save button-active"></button>-->
                                                 @else
-                                                    <button class="button-save" type="submit"><i class="fa fa-save" style="color: #fd840d; font-size: 1.5em"></i></button>
+                                                    <button class="button-save" type="submit"><i class="fa fa-save" style="color: #4d4d4d; font-size: 1.5em"></i></button>
 
                                                     <!--<button class="button-save button-deactivated" type="button"></button>-->
                                                 @endif
@@ -123,7 +123,7 @@
                                                 <?php 
                                                     $id_block = 'more-info'+$count;
                                                     ?>
-                                                <div onclick="objectDetail( {{ $id_block }} )" class="col-md-2 more-info-icon"><i class="fa fa-info-circle" style="color: #fd840d; font-size: 2em"></i></div>
+                                                <div onclick="objectDetail( {{ $id_block }} )" class="col-md-2 more-info-icon"><i class="fa fa-info-circle" style="color: #4d4d4d; font-size: 2em"></i></div>
 
                                                 
                                                 <div id="{{ $id_block }}" title="{{ $object->title }}" style="display: none">
