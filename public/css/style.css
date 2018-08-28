@@ -319,11 +319,7 @@ body {
         padding-top: 2px;
     }
 
-    .object_block{
-        border-left: 0.15em solid #4a6bc9;
-        border-bottom: 0.15em solid #4a6bc9;
-        border-right: 0.15em solid #4a6bc9;
-    }
+
 
     .image-recurso{
         width: 180px;
@@ -366,9 +362,9 @@ body {
         background-color: white;
         background-size: 140px 30px;
         background-repeat:no-repeat;
-        width: 150px;
+        width: 70px;
         height: 36px;
-        border: 0.1em solid rgb(226, 225, 225);
+        border: 0em solid rgb(226, 225, 225);
         border-radius: 10px;
         margin-bottom: 10px;
     }

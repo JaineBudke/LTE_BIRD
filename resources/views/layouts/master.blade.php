@@ -147,7 +147,7 @@
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-footer">
                                     <i class="fa fa-bars"></i>
                                 </button>
-                                <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ asset('images/footer-logo.png') }}" class="logo" alt=""></a>
+                                <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ asset('images/logo.png') }}" class="logo" alt=""></a>
                             </div>
                             
                         </div>   

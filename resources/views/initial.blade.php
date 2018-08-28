@@ -6,7 +6,7 @@
 @section('header')
 <section>
     <!-- Header -->
-    <div style="width: 100vw; height: 100vh">
+    <div style="width: 100vw">
         <img src="{{ asset('images/homebg-7.png') }}">
     </div>
 </section>
@@ -17,26 +17,26 @@
 <section class="page-section" id="intro">
     <div class="container intro">
         <div class="row margin-bottom-50">
-            <div class="col-md-12 text-center">
+            <!--<div class="col-md-12 text-center">
                 <h1 class="title-section"><span class="title-regular">Banco Interdisciplinar de Recursos Digitais <strong>(BIRD)</strong></span><br/></h1>
                 <hr class="title-underline-center">
-            </div>
+            </div>-->
         </div>
         <div class="row text-center">
             <div>
                 <div class="col-md-3 col-sm-6"></div>
                 <div class="col-md-3 col-sm-6">
                     <div>
-                        <i class="fa fa-desktop"></i>
-                        <label><strong>{{ $obj_count }}</strong>
-                            <br/>Recursos adicionados</label>
+                        <i class="fa fa-folder" style="color: #fd840d"></i>
+                        <label><h4 style="font-size: 2em">{{ $obj_count }}</h4>
+                            Recursos adicionados</label>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div>
-                        <i class="fa fa-user"></i>
-                        <label><strong>{{ $users_count }}</strong>
-                            <br/>Usuários cadastrados</label>
+                        <i class="fa fa-users" style="color: #fd840d"></i>
+                        <label><h4 style="font-size: 2em">{{ $users_count }}</h4>
+                        Usuários cadastrados</label>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6"></div>
@@ -65,35 +65,33 @@
                             $count = 0;
                             $ative = false;
                         ?>
-                        
+
+
                         @foreach( $objects as $object )
                         
-                            <div class="col-md-3" style="border: 0.2em solid white; background-color: white">
-        
-                                <?php
-                                    $str_nivel = strtoupper($object->educationLevel);
-                                ?>
-        
-                                <div class="row block-level"><center>{{ $str_nivel }}</center></div>
-        
-                                <?php 
-                                    $link = 'storage/objects/'.$object->image;
-                                    $count++;
-                                ?>
-                                
-                                <div class="row">
-                                    <center><a target="_blank" href="{{ $object->link }}">
-                                        <img class="image-recurso" onmouseover="swapImage(this)" src="{{ asset($link) }}" />
-                                        <img class="image-recurso-acessar" onmouseleave="swapImageAgain(this)"  src="{{ asset('images/acessar_recurso.png') }}" style="display: none"/>							
-                                    </a></center>
-                                </div>
-        
-        
-                                <?php 
-                                    $url = '/objects/save/'.$object->id;
-                                ?>
-        
-                                <div class="object_block">
+                        <div class="col-md-3" style="border: 0.2em solid white; background-color: white">
+    
+                           
+                            <?php 
+                                $link = 'storage/objects/'.$object->image;
+                                $count++;
+                            ?>
+                            
+                            <div class="row">
+                                <center><a target="_blank" href="{{ $object->link }}">
+                                    <img class="image-recurso" onmouseover="swapImage(this)" src="{{ asset($link) }}" />
+                                    <img class="image-recurso-acessar" onmouseleave="swapImageAgain(this)"  src="{{ asset('images/acessar_recurso.png') }}" style="display: none"/>							
+                                </a></center>
+                            </div>
+    
+    
+                            <?php 
+                                $url = '/objects/save/'.$object->id;
+                            ?>
+                            
+
+
+                             <div>
                                     <center><h6 class="font-title block-title">{{ $object->title }}</h6></center>
                                     <form method="post" action="{{ url( $url ) }}">
                                         <div class="row">
@@ -111,15 +109,18 @@
                                                 @endif
         
                                                 @if( $saved_obj == false )
-                                                    <button class="button-save button-active" type="submit"></button>
+                                                    <button class="button-save" type="submit"><i class="fa fa-save" style="color: #fd840d; font-size: 1.5em"></i></button>
+                                                    <!--button class="button-save button-active"></button>-->
                                                 @else
-                                                    <button class="button-save button-deactivated" type="button"></button>
+                                                    <button class="button-save" type="submit"><i class="fa fa-save" style="color: #fd840d; font-size: 1.5em"></i></button>
+
+                                                    <!--<button class="button-save button-deactivated" type="button"></button>-->
                                                 @endif
         
                                                 </div>
         
                                                 <?php 
-                                                    $id_block = 'more-info'+$count;
+                                                    $id_block = 'more-info'.$count;
                                                     ?>
                                                 <div onclick="objectDetail( {{ $id_block }} )" class="col-md-2 more-info-icon"></div>
         
@@ -139,28 +140,13 @@
                                         </div>
                                     </form>
                                 </div>
-                                
-                            </div>
-        
-                        @endforeach
-                        <br><br>
-                        
+                            
                         </div>
-                    <br><br><br>
-                    
-                </div>
+    
+                    @endforeach
 
-                <br><br>
-
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3">
-                        <a href="{{ url('/explore') }}"><div class="button-more"><i>Ver Mais >> </i></div></a>
                     </div>
                 </div>
-
             </div>
             
         </div>
@@ -171,7 +157,7 @@
 
 
 @section('features')
-<section class="page-section ">
+<!--<section class="page-section ">
     <div class="container ">
         <div class="row">
             <div class="col-md-12">
@@ -270,5 +256,5 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 @endsection
