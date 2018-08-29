@@ -46,9 +46,6 @@ body {
         padding: 130px 0;
     }
 
-    .title-section {
-        font-size: 42px;
-    }
 
     .title-regular {
         font-weight: 500;
@@ -436,4 +433,12 @@ body {
     .object-eval:hover {
         background-image:url('../images/pageSaved-buttonEval-delete.png');      
         cursor: pointer;   
+    }
+
+
+    .title-section {
+        font-size: 2em;
+        color: white; 
+        font-family: 'Bree Serif', sans-serif; 
+        margin-top: 25vh;
     }
