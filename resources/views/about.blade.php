@@ -8,10 +8,9 @@
 <section style="background-color: #f2f2f2">
 
 	<div class="col-md-12">
-		<div class="row" style="background-image: url('{{ asset('images/header-bg.png') }}'); height: 40vh; background-size: 100%; background-repeat: no-repeat;">
-			<br><br><br><br><br><br><br><br><br>
+		<div class="row" style="background-color: #555B7A; height: 40vh;">
 			<center>
-				<h2 style="color: white">CONHEÇA O BIRD</h2>
+				<h2 class="title-section">CONHEÇA O BIRD</h2>
 			</center>
 		</div>
 		<div class="row">
