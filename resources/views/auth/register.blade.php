@@ -8,16 +8,21 @@
 
 
 <div class="col-md-12">
-    <div class="row" style="background-image: url('{{ asset('images/header-bg.png') }}'); height: 10vh; background-size: 100%; background-repeat: no-repeat;">
+    <div class="row" style="background-color: #555B7A; height: 40vh;">
+			<center>
+				<h2 class="title-section">CADASTRO</h2>
+			</center>
+		</div>
     </div>
 </div>
 
-<br><br><br><br><br><br><br>
 <div class="container">
+
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Cadastre-se</div>
+        <div class="col-md-8 col-md-offset-2" style="min-height: 60vh">
+            <br><br><br><br>
+
+            <div>
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
@@ -75,14 +80,14 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" style="background-color: #555B7A; border: 0.1em solid white">
                                     Register
                                 </button>
                             </div>
                         </div>
                     </form>
                 </div>
-            </div><br><br><br><br><br><br><br>
+            </div>
         </div>
         
     </div>
