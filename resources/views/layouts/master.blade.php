@@ -115,9 +115,12 @@
 
 
     @yield('header')
+    @yield('about')
+
     @yield('intro')
     @yield('explore')
     @yield('features')
+
 
 
     @yield('content')

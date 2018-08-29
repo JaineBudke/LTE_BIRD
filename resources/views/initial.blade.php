@@ -14,34 +14,35 @@
 
 
 @section('intro')
-<section class="page-section" id="intro">
+<section id="intro" style="background-color: #D8D8D8"> 
     <div class="container intro">
-        <div class="row margin-bottom-50">
-            <!--<div class="col-md-12 text-center">
-                <h1 class="title-section"><span class="title-regular">Banco Interdisciplinar de Recursos Digitais <strong>(BIRD)</strong></span><br/></h1>
-                <hr class="title-underline-center">
-            </div>-->
-        </div>
+        <br>
         <div class="row text-center">
             <div>
                 <div class="col-md-2 col-sm-6"></div>
                 <div class="col-md-4 col-sm-6">
                     <div>
-                        <i class="fa fa-folder" style="color: #fd840d; font-size: 5em"></i>
-                        <label><h4 style="font-size: 2em">{{ $obj_count }}</h4>
-                            Recursos adicionados</label>
+                        <i class="fa fa-folder" style="color: #fd840d; font-size: 3em"></i>
+                        <label>
+                            <h4 style="font-size: 2em">{{ $obj_count }}</h4>
+                            Recursos adicionados
+                            </label>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div>
-                        <i class="fa fa-users" style="color: #fd840d; font-size: 5em"></i>
-                        <label><h4 style="font-size: 2em">{{ $users_count }}</h4>
-                        Usuários cadastrados</label>
+                        <i class="fa fa-users" style="color: #fd840d; font-size: 3em"></i>
+                        <label>
+                        <h4 style="font-size: 2em">{{ $users_count }}</h4>
+                        Usuários cadastrados
+                        </label>
                     </div>
                 </div>
+                
                 <div class="col-md-2 col-sm-6"></div>
             </div>
-        </div>
+            
+        </div> <br>
     </div>
 </section>
 @endsection
@@ -156,6 +157,130 @@
 </section>
 @endsection
 
+
+@section('about')
+
+<section class="info-block">
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 col-sm-12">
+
+        <br><br><br>
+
+        <div class="row">
+
+            <div class="col-lg-6 col-sm-12 card">
+                <div class="row" class="no-gutters">
+                    <div class="col-lg-3">
+                        <i class="fa fa-plane" style="color: #555B7A; font-size: 5em"></i>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="card-block px-2">
+                            <h4 class="card-title">Alcance novos ares nas suas aulas!</h4>
+                            <p class="card-text">Adicione recursos digitais a elas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-sm-12 card">
+                <div class="row" class="no-gutters">
+                    <div class="col-lg-3">
+                        <i class="fa fa-save" style="color: #555B7A; font-size: 5em"></i>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="card-block px-2">
+                            <h4 class="card-title">Salve seus recursos favoritos!</h4>
+                            <p class="card-text">Acesso posterior facilitado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+        <br><br>
+        <div class="col-lg-6 col-sm-12 card">
+            <div class="row" class="no-gutters">
+                <div class="col-lg-3">
+                    <i class="fa fa-search" style="color: #555B7A; font-size: 5em"></i>
+                </div>
+                <div class="col-lg-9">
+                    <div class="card-block px-2">
+                        <h4 class="card-title">Encontre seu recurso ideal!</h4>
+                        <p class="card-text">O BIRD te ajuda a buscá-los.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-6 col-sm-12 card">
+            <div class="row" class="no-gutters">
+                <div class="col-lg-3">
+                    <i class="fa fa-code" style="color: #555B7A; font-size: 5em"></i>
+                </div>
+                <div class="col-lg-9">
+                    <div class="card-block px-2">
+                        <h4 class="card-title">Registre seus recursos de aprendizagem</h4>
+                        <p class="card-text">Disponibilize suas produções.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+        <div class="row">
+
+        <br><br>
+        <div class="col-lg-6 col-sm-12 card">
+            <div class="row" class="no-gutters">
+                <div class="col-lg-3">
+                    <i class="fa fa-bullhorn" style="color: #555B7A; font-size: 5em"></i>
+                </div>
+                <div class="col-lg-9">
+                    <div class="card-block px-2">
+                        <h4 class="card-title">Frase interessante aqui!</h4>
+                        <p class="card-text">Descrição da frase aqui.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-6 col-sm-12 card">
+            <div class="row" class="no-gutters">
+                <div class="col-lg-3">
+                    <i class="fa fa-comments" style="color: #555B7A; font-size: 5em"></i>
+                </div>
+                <div class="col-lg-9">
+                    <div class="card-block px-2">
+                        <h4 class="card-title">Alguma outra frase legal</h4>
+                        <p class="card-text">E uma descrição breve.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+
+    <br><br><br>
+    </div>
+    </section>
+    
+
+@endsection
 
 @section('features')
 <!--<section class="page-section ">
