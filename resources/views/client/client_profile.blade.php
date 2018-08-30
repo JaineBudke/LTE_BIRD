@@ -21,7 +21,7 @@
 @endsection
 
 @section('profile')
-<section class="content" style="background-color: white">
+<section class="content" >
     <br><br>
     <div class="row">
         <div class="col-md-1"></div>
@@ -45,7 +45,7 @@
                 <br><label>Deseja alterar a imagem de perfil? Selecione um arquivo abaixo.</label>
                 <input type="file" name="image" id="image">
                 <br>
-                <button type="button" class="btn btn-primary"  onclick="setProfileImage()">Alterar imagem</button>
+                <button type="button" class="btn btn-purple"  onclick="setProfileImage()">Alterar imagem</button>
                 <div id="confirm-set-image" title="Tem certeza que deseja alterar a foto?"></div>
             </form>
             
@@ -57,7 +57,7 @@
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-            <a href="{{ url('client/editarPerfil') }}"><h4 style="color: #ffbd60"><i class="material-icons">edit</i>Editar</h4></a>
+            <a href="{{ url('client/editarPerfil') }}"><h4 style="color: #FD840D"><i class="material-icons">edit</i>Editar</h4></a>
             <h2>{{ Auth::user()->name }}</h2>
             <h4>{{ Auth::user()->email }} </h4>
         </div>
@@ -78,7 +78,7 @@
     </div>
 
 
-    <br><br><br><br><br>
+    <br>
     <div class="row">
         <div class="col-md-12">
             <center>
@@ -87,7 +87,7 @@
                     $link = '/client/deletarConta';
                 ?>
                 <form id="formulario" method="POST" action="{{ url( $link ) }}" enctype="multipart/form-data">
-                    <button type="button" onclick="confirmDeleteAccount()" class="btn btn-primary">Excluir Conta</button>
+                    <button type="button" onclick="confirmDeleteAccount()" class="btn btn-purple">Excluir Conta</button>
                     <div id="confirm-delete-acc" title="Tem certeza que deseja excluir seu perfil?"></div>
                 </form>
 

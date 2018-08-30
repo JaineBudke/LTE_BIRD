@@ -22,7 +22,7 @@
 
 
 @section('historic')
-<section class="content">
+<section class="content" style="padding: 2em 4em">
 
     <div class="row">
         <div class="col-md-2">
