@@ -38,6 +38,7 @@
 
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 
 
 </head>
@@ -67,7 +68,7 @@
     <!-- #END# Overlay For Sidebars -->
 
     <!-- Top Bar -->
-    <nav class="navbar" style="background-color: #ffbd60">
+    <nav class="navbar" style="background-color: #c4722e">
     <div class="container">  
 
         <div class="attr-nav">
@@ -77,7 +78,7 @@
                 <li><a href="{{ url('/register') }}">Cadastrar</a></li>
             @else
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    <a style="color: white" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                         {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" style="margin-left: 12vw; margin-top: -1vh" role="menu">
@@ -115,7 +116,7 @@
             <div class="navbar-header">
                 <a href="{{ url('/') }}" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="{{ url('/') }}" class="bars"></a>
-                <a href="{{ url('/') }}"> <img src="{{ asset('images/logo.png') }}" class="logo logo-scrolled" alt=""></a>
+                <a href="{{ url('/') }}"> <img src="{{ asset('images/logo-blue.png') }}" class="logo logo-scrolled" alt=""></a>
             </div>
 
         </div>    
@@ -151,40 +152,40 @@
             </div>
             <!-- #User Info -->
             <!-- Menu -->
-            <div class="menu">
+            <div class="menu" style="background-color: #59617f">
                 <ul class="list">
                     <li class="header">MENU DE NAVEGAÇÃO</li>
                     @yield('menu_first')
                         <a href="{{ url('/dashboard') }}">
-                            <i class="material-icons">check</i>
+                            <i class="material-icons" style="color: white">check</i>
                             <span>Salvos</span>
                         </a>
                     </li>
 
                     @yield('menu_second')
                         <a href="{{ url('/client/meus_objetos') }}">
-                            <i class="material-icons">edit </i>
+                            <i class="material-icons" style="color: white">edit </i>
                             <span>Meus Recursos</span>
                         </a>
                     </li>
 
                     @yield('menu_third')
                         <a href="{{ url('/client/historico') }}">
-                            <i class="material-icons">view_list</i>
+                            <i class="material-icons" style="color: white">view_list</i>
                             <span>Histórico</span>
                         </a>
                     </li>
 
                     @yield('menu_fourth')
                         <a href="{{ url('/client/perfil') }}">
-                            <i class="material-icons">camera</i>
+                            <i class="material-icons" style="color: white">camera</i>
                             <span>Meu perfil</span>
                         </a>
                     </li>
 
                     @yield('menu_fifth')
                         <a href=" {{ url('/explore') }} ">
-                            <i class="material-icons">search </i>
+                            <i class="material-icons" style="color: white">search </i>
                             <span>Explorar</span>
                         </a>
                     </li>
@@ -193,7 +194,7 @@
             </div>
             <!-- #Menu -->
             <!-- Footer -->
-            <div class="legal">
+            <div class="legal" style="background-color: #59617f; color: white">
                 <div class="copyright">
                     &copy; 2018 LTE - BIRD
                 </div>
