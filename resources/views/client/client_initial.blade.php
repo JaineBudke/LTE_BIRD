@@ -119,16 +119,16 @@
 			@endforeach
 			
 
+		
+			<center>
+			{{ $objects->links() }}
+			</center>
+			
 
 		</div>
 
 		
 
-		
-		<center>
-		{{ $objects->links() }}
-		</center>
-		
     </div>
 
 
