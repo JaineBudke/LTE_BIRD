@@ -118,18 +118,20 @@
 				
 			@endforeach
 			
+	
 
-		
-			<center>
-			{{ $objects->links() }}
-			</center>
-			
-
-		</div>
-
-		
+		</div>		
 
     </div>
+
+
+		<div class="col-md-12" style="padding-right: 100px">
+
+		<center>
+		{{ $objects->links() }}
+		</center>
+
+		</div>
 
 
 

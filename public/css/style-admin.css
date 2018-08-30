@@ -56,3 +56,16 @@
 .menu-item:hover{
     background-color: rgb(68, 72, 94);
 }
+
+
+
+.btn-purple{
+    background-color: #59617F;
+    color: white;
+    height: 2.5em;
+}
+
+.btn-purple:hover{
+    color: white;
+    background-color:  #555B7A;
+}

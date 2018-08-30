@@ -28,7 +28,7 @@ class UserController extends Controller
         // recupera ID do usuario logado
         $idUser = auth()->user()->id;
         // recupera historico de atividades efetuadas
-        $activities = $logBook->where('id_user', '=', $idUser)->orderBy('created_at', 'desc')->paginate(10);
+        $activities = $logBook->where('id_user', '=', $idUser)->orderBy('created_at', 'desc')->paginate(8);
 
         return View('/client/clientHistoric', compact('activities'));
 
@@ -143,7 +143,7 @@ class UserController extends Controller
         $objects = $object->where([
             ['objects.status', 1],
             ['objects.id_user', $idUser],
-        ])->paginate(10);
+        ])->paginate(8);
         
         return View('/client/client_myObjects', compact('objects'));
 

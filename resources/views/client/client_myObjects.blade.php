@@ -28,7 +28,7 @@
 @endsection
 
 @section('my_objects')
-<section class="content">
+<section class="content" style="padding: 2em 4em">
 
     @if(Session::has('mensagem_sucesso'))
         <div class="alert alert-success">{{ Session::get('mensagem_sucesso') }}</div>
@@ -41,7 +41,7 @@
         <div class="col-md-6">
             <br>
             {{ Form::open(array('url' => '/client/objectRegister', 'method'=> 'POST' )) }}
-            {{ Form::submit('Novo Recurso', array('class'=>'btn btn-primary')) }}
+            {{ Form::submit('Adicionar Recurso', array('class'=>'btn btn-purple')) }}
             {{ Form::close() }}
         </div>
     </div>
@@ -52,7 +52,6 @@
                 <th scope="col">#</th>
                 <th scope="col">Título</th>
                 <th scope="col">Link</th>
-                <th scope="col">Nível de Ensino</th>
                 <th scope="col">Status</th>
                 <th scope="col">Ações</th>
             </tr>
@@ -69,7 +68,6 @@
                     <th scope="row"> {{ $cont }} </th>
                     <td>{{ $object->title }}</td>
                     <td>{{ $object->link }}</td>
-                    <td>{{ $object->educationLevel }}</td>
                     @if( $object->requested == 1 )
                     <td>Aguardando aprovação</td>
                     @elseif( $object->requested == 2 )
