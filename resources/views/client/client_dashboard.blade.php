@@ -156,35 +156,35 @@
                 <ul class="list">
                     <li class="header">MENU DE NAVEGAÇÃO</li>
                     @yield('menu_first')
-                        <a href="{{ url('/dashboard') }}">
+                        <a class="menu-item" href="{{ url('/dashboard') }}">
                             <i class="material-icons" style="color: white">check</i>
-                            <span>Salvos</span>
+                            <span> Salvos</span>
                         </a>
                     </li>
 
                     @yield('menu_second')
-                        <a href="{{ url('/client/meus_objetos') }}">
+                        <a class="menu-item" href="{{ url('/client/meus_objetos') }}">
                             <i class="material-icons" style="color: white">edit </i>
                             <span>Meus Recursos</span>
                         </a>
                     </li>
 
                     @yield('menu_third')
-                        <a href="{{ url('/client/historico') }}">
+                        <a class="menu-item" href="{{ url('/client/historico') }}">
                             <i class="material-icons" style="color: white">view_list</i>
                             <span>Histórico</span>
                         </a>
                     </li>
 
                     @yield('menu_fourth')
-                        <a href="{{ url('/client/perfil') }}">
+                        <a class="menu-item" href="{{ url('/client/perfil') }}">
                             <i class="material-icons" style="color: white">camera</i>
                             <span>Meu perfil</span>
                         </a>
                     </li>
 
                     @yield('menu_fifth')
-                        <a href=" {{ url('/explore') }} ">
+                        <a class="menu-item" href=" {{ url('/explore') }} ">
                             <i class="material-icons" style="color: white">search </i>
                             <span>Explorar</span>
                         </a>

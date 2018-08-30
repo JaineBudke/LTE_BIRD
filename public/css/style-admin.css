@@ -45,3 +45,14 @@
     box-shadow: 4px 6px 15px 0px rgba(97,97,97,1);
     
 }
+
+
+/** CONFIGURAÇÃO CSS MENU ÁREA PESSOAL DO USUARIO **/
+.active-menu {
+    background-color: rgb(68, 72, 94);
+}
+
+
+.menu-item:hover{
+    background-color: rgb(68, 72, 94);
+}

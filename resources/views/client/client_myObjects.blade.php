@@ -5,7 +5,7 @@
 @endsection
 
 @section('menu_second')
-<li class="active">
+<li class="active-menu">
 @endsection
 
 @section('menu_third')

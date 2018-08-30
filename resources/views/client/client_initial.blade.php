@@ -1,7 +1,7 @@
 @extends('client.client_dashboard')
 
 @section('menu_first')
-<li class="active">
+<li class="active-menu">
 @endsection
 
 @section('menu_second')
