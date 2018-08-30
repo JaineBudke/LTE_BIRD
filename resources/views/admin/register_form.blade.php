@@ -5,7 +5,7 @@
 @endsection
 
 @section('menu_second')
-<li class="active">
+<li class="active-menu">
 @endsection
 
 @section('menu_third')
@@ -28,18 +28,18 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>CADASTRO DE NOVO OBJETO DE APRENDIZAGEM</h2>
+                            <h2>Cadastro de novo objeto de aprendizagem</h2>
                         </div>
                     </div>
                     <div class="body" style="background-color: white" >
             
-                        <div class="col-md-3 item-menu-form" id="step1" style="background-color: #009688">
+                        <div class="col-md-4 item-menu-form" id="step1" style="background-color: #009688">
                             <h3 class="item">1. Descrição do Objeto</h3>
                         </div>
-                        <div class="col-md-3 item-menu-form" id="step2">
+                        <div class="col-md-4 item-menu-form" id="step2">
                             <h3 class="item">2. Classificação do Objeto</h3>
                         </div>
-                        <div class="col-md-3 item-menu-form" id="step3">
+                        <div class="col-md-4 item-menu-form" id="step3">
                             <h3 class="item">3. Unidade Temática</h3>
                         </div>
 

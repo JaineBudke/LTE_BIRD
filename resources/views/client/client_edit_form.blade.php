@@ -34,18 +34,18 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>EDITAR RECURSO DE APRENDIZAGEM</h2>
+                            <h2>Editar recurso de aprendizagem</h2>
                         </div>
                     </div>
                     <div class="body" style="background-color: white" >
             
-                        <div class="col-md-3 item-menu-form" id="step1" style="background-color: #009688">
+                        <div class="col-md-4 item-menu-form" id="step1" style="background-color: #009688">
                             <h3 class="item">1. Descrição do Recurso</h3>
                         </div>
-                        <div class="col-md-3 item-menu-form" id="step2">
+                        <div class="col-md-4 item-menu-form" id="step2">
                             <h3 class="item">2. Classificação do Recurso</h3>
                         </div>
-                        <div class="col-md-3 item-menu-form" id="step3">
+                        <div class="col-md-4 item-menu-form" id="step3">
                             <h3 class="item">3. Unidade Temática</h3>
                         </div>
                         <br><br><br><br>
@@ -464,8 +464,8 @@
 
                                 </div>
                                 <div class="content" style="text-align: right; padding: 2em 2em 2em 2em;">
-                                    <button type="button" id="next" class="btn btn-primary" onclick="nextPage()">Próximo</button>
-                                    <input  type="button" id="finish" value="Editar" onclick="verificarCamposSubmit()" class="btn btn-primary" style="display: none"/>
+                                    <button type="button" id="next" class="btn btn-purple" onclick="nextPage()">Próximo</button>
+                                    <input  type="button" id="finish" value="Editar" onclick="verificarCamposSubmit()" class="btn btn-purple" style="display: none"/>
                                 </div>
                             </div>
                         </form>

@@ -22,7 +22,7 @@
 
 
 @section('profile')
-<section class="content" style="background-color: white">
+<section class="content">
     <br><br>
     <div class="row">
         <div class="col-md-1"></div>
@@ -43,11 +43,11 @@
             <?php 
                 $edit = '/client/editarRecurso/'.$object->id;
             ?>
-            <a href="{{ url( $edit ) }}"><h4 style="color: #ffbd60"><i class="material-icons">edit</i>Editar</h4></a>
+            <a href="{{ url( $edit ) }}"><h4 style="color: #FD840D"><i class="material-icons">edit</i>Editar</h4></a>
         </div>
         <br><br>
     </div>
-    <br><br><br><br>
+    <br><br>
 
     <div class="row">
         <div class="col-md-1"></div>
@@ -97,12 +97,12 @@
                     $link = '/client/deletarObjeto/'.$object->id;
                 ?>
                 <form id="formulario" method="POST" action="{{ url( $link ) }}" enctype="multipart/form-data">
-                    <button type="button" onclick="confirmDelete()" class="btn btn-primary">Excluir Recurso</button>
+                    <button type="button" onclick="confirmDelete()" class="btn btn-purple">Excluir Recurso</button>
                     <div id="dialog-confirm" title="Tem certeza que deseja excluir este recurso?"></div>
                 </form>
             </center>
         </div>
-        <br><br>
+        <br><br><br><br>
     </div>
 </section>
 @endsection
