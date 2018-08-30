@@ -27,7 +27,8 @@
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
 
-    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
 
 </head>
 
@@ -59,13 +60,13 @@
 
     
     <!-- Top Bar -->
-    <nav class="navbar">
+    <nav class="navbar" style="background-color: #c4722e">
 
         <div class="container-fluid">
             <div class="navbar-header">
                 <a href="{{ url('/') }}" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="{{ url('/') }}" class="bars"></a>
-                <a class="navbar-brand" href="{{ url('/') }}">BIRD - ADMINISTRAÇÃO</a>
+                <a href="{{ url('/') }}"> <img src="{{ asset('images/logo-blue.png') }}" class="logo logo-scrolled" alt=""></a>
             </div>
         </div>
     </nav>
@@ -82,7 +83,7 @@
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}</div>
                     <div class="email">{{ Auth::user()->email }}</div>
                     <div class="btn-group user-helper-dropdown">
-                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="color: #4d4d4d">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
                             <li>
                                 <a href="{{ route('logout') }}"
@@ -102,33 +103,33 @@
 
             <!-- #User Info -->
             <!-- Menu -->
-            <div class="menu">
+            <div class="menu" style="background-color: #59617f">
                 <ul class="list">
                     <li class="header">MENU DE NAVEGAÇÃO</li>
                     @yield('menu_first')
-                        <a href="{{ url('/admin') }}">
-                            <i class="material-icons">home</i>
+                        <a class="menu-item" href="{{ url('/admin') }}">
+                            <i style="color: white" class="material-icons">home</i>
                             <span>Home</span>
                         </a>
                     </li>
 
                     @yield('menu_second')
-                        <a href="{{ url('/admin/cadastrar') }}">
-                            <i class="material-icons">assignment</i>
+                        <a class="menu-item" href="{{ url('/admin/cadastrar') }}">
+                            <i style="color: white" class="material-icons">assignment</i>
                             <span>Cadastrar RED</span>
                         </a>
                     </li>
 
                     @yield('menu_third')
-                        <a href="{{ url('/admin/lista') }}">
-                            <i class="material-icons">view_list</i>
-                            <span>Visualizar REDs</span>
+                        <a class="menu-item" href="{{ url('/admin/lista') }}">
+                            <i style="color: white" class="material-icons">view_list</i>
+                            <span>Visualizar RED</span>
                         </a>
                     </li>
                     @yield('menu_fourth')
-                        <a href="{{ url('/admin/avaliar') }}">
-                            <i class="material-icons">done_all</i>
-                            <span>Avaliar REDs</span>
+                        <a class="menu-item" href="{{ url('/admin/avaliar') }}">
+                            <i style="color: white" class="material-icons">done_all</i>
+                            <span>Avaliar RED</span>
                         </a>
                     </li>
 
@@ -137,7 +138,7 @@
             </div>
             <!-- #Menu -->
             <!-- Footer -->
-            <div class="legal">
+            <div class="legal" style="background-color: #59617f; color: white">
                 <div class="copyright">
                     &copy; 2018 LTE - BIRD
                 </div>

@@ -22,7 +22,7 @@
 
 
 @section('profile')
-<section class="content" style="background-color: white">
+<section class="content">
     <br><br>
     <div class="row">
         <div class="col-md-1"></div>
@@ -64,9 +64,9 @@
                 <label class="form-label">Município: </label>
                 <input type="text" class="form-control" name="city" value="<?php echo htmlspecialchars($city); ?>">
                 
-                <br><br><br>
-                <input type="submit" id="finish" value="Salvar" class="btn btn-primary"/>
-
+                <br>
+                <input type="submit" id="finish" value="Salvar" class="btn btn-purple"/>
+                <br><br><br><br>
             </div>
         </div>
 

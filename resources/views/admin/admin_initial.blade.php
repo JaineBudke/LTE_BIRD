@@ -1,7 +1,7 @@
 @extends('admin.admin_dashboard')
 
 @section('menu_first')
-<li class="active">
+<li class="active-menu">
 @endsection
 
 @section('menu_second')
@@ -25,16 +25,13 @@
                 <div class="alert alert-success">{{ Session::get('mensagem_sucesso') }}</div>
             @endif
             
-            <div class="block-header">
-                <h2>DASHBOARD</h2>
-            </div>
 
             <!-- Widgets -->
             <div class="row clearfix" >
 
                 <a href="{{ url('/admin/cadastrar') }}" >
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-pink hover-expand-effect">
+                    <div class="info-box bg-teal hover-expand-effect">
                         <div class="icon">
                             <i class="material-icons">playlist_add_check</i>
                         </div>
@@ -47,7 +44,7 @@
                 </div></a>
                 <a href="{{ url('/admin/lista') }}" >
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-cyan hover-expand-effect">
+                    <div class="info-box bg-teal hover-expand-effect">
                         <div class="icon">
                             <i class="material-icons">list</i>
                         </div>
