@@ -50,17 +50,17 @@
 
 @section('explore')
 <section style="background-color: rgb(250, 250, 250)">
-    <div class="col-md-12" style="margin-top: 1.5em">
-        <div class="mais-acessados container">
-            <br><br>
-            <center><h2 class="title-section"><span class="title-regular">Recursos Populares</span></h2></center>
+    <div class="col-md-12">
+        <div class="container">
+            <br><br><br>
+            <center><h2 class="title-regular">Recursos Populares</h2></center>
             
 
             <div class="col-md-12">
                 <div class="mais-acessados container">
 
                     <div class="col-md-12">
-                        <br><br><br>
+                        
 
                         <?php 
                             $count = 0;

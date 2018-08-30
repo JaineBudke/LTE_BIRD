@@ -9,7 +9,7 @@
 @endsection
 
 @section('menu_third')
-<li class="active">
+<li class="active-menu">
 @endsection
 
 @section('menu_fourth')
