@@ -211,7 +211,7 @@ class UserController extends Controller
                         ['objects.status', 1],
                         ['saved_objects.id_user', $idUser],
                     ])->join('objects', 'objects.id', '=', 'saved_objects.id_object')
-                    ->paginate(4);
+                    ->paginate(3);
         $historic = $logBook->where('log_book.id_user', '=', $idUser)->get();
         
         return View('/client/client_initial', compact('objects', 'historic'));
