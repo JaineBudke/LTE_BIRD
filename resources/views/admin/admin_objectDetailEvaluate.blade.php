@@ -17,7 +17,7 @@
 @endsection
 
 @section('detail')
-<section class="content" style="background-color: white">
+<section class="content" >
     <br><br>
     <div class="row">
         <div class="col-md-1"></div>
@@ -41,12 +41,12 @@
                 $reject = '/admin/rejeitarRecurso/'.$object->id;
             ?>
                 <form id="form_accept" method="POST" action="{{ url( $accept ) }}" enctype="multipart/form-data">
-                    <button type="button" onclick="confirmAccept()" class="btn btn-primary">Aceitar Recurso</button>
+                    <button type="button" onclick="confirmAccept()" class="btn btn-purple">Aceitar Recurso</button>
                     <div id="accept-confirm" title="Tem certeza que deseja aceitar este recurso?"></div>
                 </form>
                 <br>
                 <form id="form_reject" method="POST" action="{{ url( $reject ) }}" enctype="multipart/form-data">
-                    <button type="button" onclick="confirmReject()" class="btn btn-primary">Rejeitar Recurso</button>
+                    <button type="button" onclick="confirmReject()" class="btn btn-purple">Rejeitar Recurso</button>
                     <div id="accept-reject" title="Tem certeza que deseja rejeitar este recurso?"></div>
                 </form>
         </div>
