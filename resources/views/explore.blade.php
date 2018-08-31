@@ -108,7 +108,7 @@
 						  		
 						  		</div>
 						  		<div class="form-group col-md-2">
-						  			<button type="submit" class="btn btn-primary" style="width: 100%">Buscar</button>
+						  			<button type="submit" class="btn btn-purple" style="width: 100%">Buscar</button>
 						  		</div>
 						  	</div>
 
@@ -291,7 +291,7 @@
 
                         @foreach( $objects as $object )
                         
-                        <div class="col-md-3" style="">
+                        <div class="col-md-3" style="margin-top: 3em">
     
                            
                             <?php 
@@ -365,7 +365,7 @@
                                 </div>
                             
                         </div>
-    
+						
                     @endforeach
 
                     </div>

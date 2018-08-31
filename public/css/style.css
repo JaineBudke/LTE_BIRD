@@ -297,14 +297,14 @@ body {
     
     /* FILTROS DE BUSCA - EXPLORE */
     .menu-search {
-        background-color: #a9bdf6;
+        background-color: rgb(174, 184, 235);
         color: white;
-        padding: 0.3em;
-        border: 0.1em solid #bebebe;
+        padding: 1em;
+        border: 0.1em solid transparent;
     }
 
     .active{
-        background-color: #6686e0;
+        background-color: #555B7A;
     }
 
     /* BLOCO DO RECURSO */
@@ -441,4 +441,15 @@ body {
         color: white; 
         font-family: 'Bree Serif', sans-serif; 
         margin-top: 25vh;
+    }
+
+    .btn-purple{
+        background-color: #59617F;
+        color: white;
+        height: 2.5em;
+    }
+    
+    .btn-purple:hover{
+        color: white;
+        background-color:  #555B7A;
     }
