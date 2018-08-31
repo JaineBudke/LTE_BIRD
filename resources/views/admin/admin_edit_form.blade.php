@@ -459,8 +459,8 @@
 
                                 </div>
                                 <div class="content" style="text-align: right; padding: 2em 2em 2em 2em;">
-                                    <button type="button" id="next" class="btn btn-primary" onclick="nextPage()">Próximo</button>
-                                    <input  type="button" id="finish" value="Cadastrar" onclick="verificarCamposSubmit()" class="btn btn-primary" style="display: none"/>
+                                    <button type="button" id="next" class="btn btn-purple" onclick="nextPage()">Próximo</button>
+                                    <input  type="button" id="finish" value="Cadastrar" onclick="verificarCamposSubmit()" class="btn btn-purple" style="display: none"/>
                                 </div>
                             </div>
                         </form>

@@ -54,9 +54,12 @@
         <div class="container">
             <br><br><br>
             <center><h2 class="title-regular">Recursos Populares</h2></center>
-            
+
+
+            <br><br>            
 
             <div class="col-md-12">
+            
                 <div class="mais-acessados container">
 
                     <div class="col-md-12">
@@ -111,10 +114,10 @@
                                                 @endif
         
                                                 @if( $saved_obj == false )
-                                                    <button class="button-save" type="submit"><i class="fa fa-save" style="color: #4d4d4d; font-size: 1.5em"></i></button>
+                                                    <button class="button-save" type="submit"><i class="fa fa-star" style="color: #4d4d4d; font-size: 1.5em"></i></button>
                                                     <!--button class="button-save button-active"></button>-->
                                                 @else
-                                                    <button class="button-save" type="submit"><i class="fa fa-save" style="color: #4d4d4d; font-size: 1.5em"></i></button>
+                                                    <button class="button-save" type="submit"><i class="fa fa-star" style="color: #4d4d4d; font-size: 1.5em"></i></button>
 
                                                     <!--<button class="button-save button-deactivated" type="button"></button>-->
                                                 @endif

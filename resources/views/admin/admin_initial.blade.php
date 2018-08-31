@@ -31,12 +31,12 @@
 
                 <a href="{{ url('/admin/cadastrar') }}" >
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-teal hover-expand-effect">
+                    <div class="info-box hover-expand-effect" style="background-color: #BABABA">
                         <div class="icon">
                             <i class="material-icons">playlist_add_check</i>
                         </div>
                         <div class="content">
-                            <div class="text">CADASTRAR NOVO RED</div>
+                            <div class="text" style="color: black; font-family: 'Bree Serif'">CADASTRAR NOVO RED</div>
                             <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"></div>
                         </div>
                     </div>
@@ -44,12 +44,12 @@
                 </div></a>
                 <a href="{{ url('/admin/lista') }}" >
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-teal hover-expand-effect">
+                    <div class="info-box hover-expand-effect" style="background-color: #BABABA">
                         <div class="icon">
                             <i class="material-icons">list</i>
                         </div>
                         <div class="content">
-                            <div class="text">VISUALIZAR REDs</div>
+                            <div class="text" style="color: black; font-family: 'Bree Serif'">VISUALIZAR RED</div>
                             <div class="number count-to" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20"></div>
                         </div>
                     </div>
@@ -58,12 +58,12 @@
 
                 <a href="{{ url('/admin/avaliar') }}" >
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-teal hover-expand-effect">
+                    <div class="info-box hover-expand-effect" style="background-color: #BABABA">
                         <div class="icon">
                             <i class="material-icons">done_all</i>
                         </div>
                         <div class="content">
-                            <div class="text">AVALIAR REDs</div>
+                            <div class="text" style="color: black; font-family: 'Bree Serif'">AVALIAR RED</div>
                             <div class="number count-to" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20"></div>
                         </div>
                     </div>

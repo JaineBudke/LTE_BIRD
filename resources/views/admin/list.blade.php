@@ -21,8 +21,10 @@
 <section class="content">
         <div class="container-fluid">
 
-            <div class="block-header">
-                <h2>LISTA DE RECURSOS DIGITAIS CADASTRADOS</h2>
+            <div class="card">
+                <div class="header">
+                    <h2>LISTA DE RECURSOS DIGITAIS CADASTRADOS</h2>
+                </div>
             </div>
 
             <table class="table table-striped">
@@ -30,8 +32,6 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Título</th>
-                        <th scope="col">Link</th>
-                        <th scope="col">Nível de Ensino</th>
                         <th scope="col">ID_Usuário</th>
                         <th scope="col">Ações</th>
                     </tr>
@@ -47,8 +47,6 @@
                         <tr>
                             <th scope="row"> {{ $cont }} </th>
                             <td>{{ $object->title }}</td>
-                            <td>{{ $object->link }}</td>
-                            <td>{{ $object->educationLevel }}</td>
                             @if( $object->name != null )
                             <td>{{ $object->name }}</td>
                             @else
