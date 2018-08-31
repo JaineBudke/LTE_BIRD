@@ -117,7 +117,7 @@
 						</div>
 						<!-- FIM DO FORMULARIO DO ENSINO INFANTIL -->
 						@else
-							<div class="col-md-12" style="border: 0.1em solid #d0d0d0">
+					<div class="col-md-12" style="border: 0.1em solid #d0d0d0">
 
 							<br>
 							<div class="row" style="margin-left: 0.1em">
@@ -129,7 +129,7 @@
 							</div><br>
 						
 							<!-- FORMULARIO DE BUSCA DO ENSINO FUNDAMENTAL I -->
-							<div id="fund" >
+							<div id="fund" style="">
 							<form method="POST" action="{{ url('/searchFund') }}" enctype="multipart/form-data">
 
 								<div class="form-row">
@@ -332,10 +332,14 @@
                                                 @endif
         
                                                 @if( $saved_obj == false )
-                                                    <button class="button-save" type="submit"><i class="fa fa-star" style="color: #4d4d4d; font-size: 1.5em"></i></button>
+
+                                                    <button class="button-save" type="submit"><i class="fa fa-save" style="color: #4d4d4d; font-size: 1.5em"></i></button>
+                                                    <!--button class="button-save button-active"></button>-->
+                                               
                                                     <!--button class="button-save button-active"></button>-->
                                                 @else
-                                                    <button class="button-save" type="submit"><i class="fa fa-star" style="color: #4d4d4d; font-size: 1.5em"></i></button>
+                                                    <button class="button-save" type="submit"><i class="fa fa-check" style="color: #4d4d4d; font-size: 1.5em"></i></button>
+
 
                                                     <!--<button class="button-save button-deactivated" type="button"></button>-->
                                                 @endif
@@ -376,6 +380,7 @@
 			<center>
 			{{ $objects->links() }}
 			</center>
+			<br><br><br>
     	</div>
 		<br><br><br><br><br><br>
 	</div>

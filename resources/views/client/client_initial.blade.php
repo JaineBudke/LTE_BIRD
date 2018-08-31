@@ -81,7 +81,7 @@
 								<div class="col-md-2"></div>
 								<div class="col-md-3" style="margin-left: 10px">
 									<form method="POST" action="{{ url( $url ) }}" enctype="multipart/form-data">
-										<button class="button-save" type="submit"><i class="fa fa-star" style="color: #4d4d4d; font-size: 1.5em"></i></button>
+										<button class="button-save" type="submit"><i class="fa fa-times" style="color: #4d4d4d; font-size: 1.5em"></i></button>
 									</form>
 								</div>
 								<div class="col-md-3">
