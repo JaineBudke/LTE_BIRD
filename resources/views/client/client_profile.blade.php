@@ -86,10 +86,10 @@
                 <?php 
                     $link = '/client/deletarConta';
                 ?>
-                <form id="formulario" method="POST" action="{{ url( $link ) }}" enctype="multipart/form-data">
+                <!--<form id="formulario" method="POST" action="{{ url( $link ) }}" enctype="multipart/form-data">
                     <button type="button" onclick="confirmDeleteAccount()" class="btn btn-purple">Excluir Conta</button>
                     <div id="confirm-delete-acc" title="Tem certeza que deseja excluir seu perfil?"></div>
-                </form>
+                </form>-->
 
             </center>
         </div>

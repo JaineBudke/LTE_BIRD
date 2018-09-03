@@ -86,7 +86,7 @@
 								</div>
 								<div class="col-md-3">
 									<?php
-										$id_block = 'more-info'.$count;
+										$id_block = 'more-info'+$count;
 										?>
 								<div onclick="objectDetail( {{ $id_block }} )" class="col-md-2 more-info-icon"><i class="fa fa-info-circle" style="color: #4d4d4d; font-size: 2em"></i></div>
 
