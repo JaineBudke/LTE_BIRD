@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace BIRD\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Http\Request;
-use App\Object;
-use App\Object_type;
-use App\Component;
-use App\Age_range;
-use App\Log_book;
-use App\Saved_object;
-use App\thematic_unit;
-use App\evaluation_object;
+use BIRD\Object;
+use BIRD\Object_type;
+use BIRD\Component;
+use BIRD\Age_range;
+use BIRD\Log_book;
+use BIRD\Saved_object;
+use BIRD\thematic_unit;
+use BIRD\evaluation_object;
 
 use DB;
 

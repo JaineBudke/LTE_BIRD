@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Exceptions;
+namespace BIRD\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;

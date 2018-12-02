@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace BIRD;
 
 use Illuminate\Database\Eloquent\Model;
 

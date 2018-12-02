@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace BIRD\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
-use \App\User;
-use \App\Object;
-use \App\saved_object;
+use \BIRD\User;
+use \BIRD\Object;
+use \BIRD\saved_object;
 use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller

@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace BIRD\Http\Controllers;
 
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Http\Request;
-use \App\Log_book;
+use \BIRD\Log_book;
 use DB;
-use \App\User;
-use \App\Http\Controllers\ObjectController;
-use App\Object;
-use App\Object_type;
-use App\Component;
-use App\Age_range;
-use App\thematic_unit;
+use \BIRD\User;
+use \BIRD\Http\Controllers\ObjectController;
+use BIRD\Object;
+use BIRD\Object_type;
+use BIRD\Component;
+use BIRD\Age_range;
+use BIRD\thematic_unit;
 
 class AdminController extends Controller
 {

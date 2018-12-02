@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace BIRD\Http\Controllers;
 
 use Illuminate\Support\Facades\Redirect;
 use DB;
 use Illuminate\Http\Request;
-use \App\Log_book;
-use \App\User;
-use App\Object;
-use App\Object_type;
-use App\Component;
-use App\Age_range;
-use App\Saved_object;
-use App\thematic_unit;
-use App\evaluation_object;
+use \BIRD\Log_book;
+use \BIRD\User;
+use BIRD\Object;
+use BIRD\Object_type;
+use BIRD\Component;
+use BIRD\Age_range;
+use BIRD\Saved_object;
+use BIRD\thematic_unit;
+use BIRD\evaluation_object;
 
 class UserController extends Controller
 {
