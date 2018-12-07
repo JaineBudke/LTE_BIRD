@@ -130,10 +130,10 @@ Route::post('/client/avaliarObjeto/{id}', 'ObjectController@evaluateObject');
 Route::post('/client/removeEval/{id}', 'ObjectController@removeEvalObject');
 
 // buscar recursos ensino infantil (filtros)
-Route::post('/searchInf', 'ObjectController@searchObjectInf');
+Route::any('/searchInf', 'ObjectController@searchObjectInf');
 
 // buscar recursos ensino fundamental I (filtros)
-Route::post('/searchFund', 'ObjectController@searchObjectFund');
+Route::any('/searchFund', 'ObjectController@searchObjectFund');
 
 // salvar recurso na área pessoal
 Route::post('/objects/save/{id}', 'ObjectController@saveObject');

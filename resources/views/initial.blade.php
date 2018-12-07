@@ -225,7 +225,7 @@
         <div class="col-lg-6 col-sm-12 card">
             <div class="row" class="no-gutters">
                 <div class="col-lg-3">
-                    <i class="fa fa-code" style="color: #555B7A; font-size: 5em"></i>
+                    <i class="fa fa-upload" style="color: #555B7A; font-size: 5em"></i>
                 </div>
                 <div class="col-lg-9">
                     <div class="card-block px-2">
@@ -242,7 +242,7 @@
         <div class="row">
 
         <br><br>
-        <div class="col-lg-6 col-sm-12 card">
+        <!--<div class="col-lg-6 col-sm-12 card">
             <div class="row" class="no-gutters">
                 <div class="col-lg-3">
                     <i class="fa fa-bullhorn" style="color: #555B7A; font-size: 5em"></i>
@@ -254,10 +254,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
 
 
-        <div class="col-lg-6 col-sm-12 card">
+        <!--<div class="col-lg-6 col-sm-12 card">
             <div class="row" class="no-gutters">
                 <div class="col-lg-3">
                     <i class="fa fa-comments" style="color: #555B7A; font-size: 5em"></i>
@@ -269,7 +269,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
 
         </div>
 
