@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 2525),
+    'port' => env('MAIL_PORT', 465),
 
     /*
     |--------------------------------------------------------------------------
@@ -57,7 +57,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'ltebirdufrn@gmail.com'),
-        'name' => env('MAIL_FROM_NAME', 'bird lte'),
+        'name' => env('MAIL_FROM_NAME', 'BIRD LTE'),
     ],
 
     /*
