@@ -91,10 +91,10 @@ class ObjectController extends Controller
         // array com os tipos
         $tipos = array("animacao", "audiovisual", "ebook", "fotografia", 
         "ilustracao", "infografico", "jogo", "podcast", 
-        "realidadeAumentada", "realidadeVirtual", "simulacao");
+        "realidadeAumentada", "realidadeVirtual", "simulacao", "sequencia", "experimento");
 
         // percorre array e verifica quais foram selecionados
-        for( $i = 0 ; $i < 11 ; $i++ ){
+        for( $i = 0 ; $i < 13 ; $i++ ){
             if( $request->get('recurso'.$i) == true ){ // checkbox -> checked
 
                 // cria nova associacao de tipo de objeto e add no BD

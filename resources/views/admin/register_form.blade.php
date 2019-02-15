@@ -104,6 +104,11 @@
                                             <label for="md_checkbox_realidade_virtual">Realidade Virtual</label>
                                             <input type="checkbox" value="simulacao" name="recurso10" id="md_checkbox_simulacao" class="filled-in chk-col-blue-grey" />
                                             <label for="md_checkbox_simulacao">Simulação</label>
+                                            <input type="checkbox" value="sequencia" name="recurso11" id="md_checkbox_sequencia" class="filled-in chk-col-blue-grey" />
+                                            <label for="md_checkbox_sequencia">Sequência didática</label>
+                                            <input type="checkbox" value="experimento" name="recurso12" id="md_checkbox_experimento" class="filled-in chk-col-blue-grey" />
+                                            <label for="md_checkbox_experimento">Experimento prático</label>
+
                                         </div>   
                                         <br><br>
                                         <select id="nivelensino" class="form-control form-float form-group " name="nivelEnsino" >

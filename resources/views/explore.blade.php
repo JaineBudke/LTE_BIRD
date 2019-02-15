@@ -88,7 +88,10 @@
 								        <option value="realidadeAumentada" <?php if( $tipoRec == "realidadeAumentada" ) echo 'selected="selected"';?>>Realidade Aumentada</option>
 								        <option value="realidadeVirtual" <?php if( $tipoRec == "realidadeVirtual" ) echo 'selected="selected"';?>>Realidade Virtual</option>
 								        <option value="simulacao" <?php if( $tipoRec == "simulacao" ) echo 'selected="selected"';?>>Simulação</option>
-							      	</select>
+										<option value="sequencia" <?php if( $tipoRec == "sequencia" ) echo 'selected="selected"';?>>Sequência didática</option>
+										<option value="experimento" <?php if( $tipoRec == "experimento" ) echo 'selected="selected"';?>>Experimento prático</option>
+							      		
+									</select>
 						    	</div>
 
 								<div class="form-group col-md-6">
@@ -378,7 +381,7 @@
             
         	<br><br><br>
 			<center>
-			{{ $objects->links() }}
+			{{ $objects->render() }}
 			</center>
 			<br><br><br>
     	</div>
