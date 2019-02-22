@@ -58,7 +58,7 @@
 								        <option value="O eu, o outro e nós" <?php if( $campoExp == "O eu, o outro e nós" ) echo 'selected="selected"';?>>O eu, o outro e nós</option>
 								        <option value="Corpo, gesto e movimentos" <?php if( $campoExp == "Corpo, gesto e movimentos" ) echo 'selected="selected"';?>>Corpo, gesto e movimentos</option>
 										<option value="Traços, sons, cores e formas" <?php if( $campoExp == "Traços, sons, cores e formas" ) echo 'selected="selected"';?>>Traços, sons, cores e formas</option>
-										<option value="Oralidade e escrita" <?php if( $campoExp == "Oralidade e escrita" ) echo 'selected="selected"';?>>Oralidade e escrita</option>
+										<option value="Escuta, fala, pensamento e imaginação" <?php if( $campoExp == "Escuta, fala, pensamento e imaginação" ) echo 'selected="selected"';?>>Escuta, fala, pensamento e imaginação</option>
 										<option value="Espaços, tempos, quantidades, relação e transformações" <?php if( $campoExp == "Espaços, tempos, quantidades, relação e transformações" ) echo 'selected="selected"';?>>Espaços, tempos, quantidades, relação e transformações</option>
 							      	</select>
 						   		</div>

@@ -213,7 +213,7 @@
                                                 <br><input type="checkbox" value="Traços, sons, cores e formas" name="campo3" id="ce_md_checkbox3" class="check1 filled-in chk-col-blue-grey" value="3" <?php if(in_array('Traços, sons, cores e formas', $campos)) echo 'checked="checked"';?>/>
                                                 <label for="ce_md_checkbox3">Traços, sons, cores e formas</label>
                                                 <br><input type="checkbox" value="Oralidade e escrita" name="campo4" id="ce_md_checkbox4" class="filled-in chk-col-blue-grey" value="4" <?php if(in_array('Oralidade e escrita', $campos)) echo 'checked="checked"';?>/>
-                                                <label for="ce_md_checkbox4">Oralidade e escrita</label>
+                                                <label for="ce_md_checkbox4">Escuta, fala, pensamento e imaginação</label>
                                                 <br><input type="checkbox" value="Espaços, tempos, quantidades, relação e transformações" name="campo5" id="ce_md_checkbox5" class="filled-in chk-col-blue-grey" value="5" <?php if(in_array('Espaços, tempos, quantidades, relação e transformações', $campos)) echo 'checked="checked"';?>/>
                                                 <label for="ce_md_checkbox5">Espaços, tempos, quantidades, relação e transformações</label>
                                             </div>
