@@ -33,6 +33,7 @@
                         <th scope="col">#</th>
                         <th scope="col">Título</th>
                         <th scope="col">Usuário</th>
+                        <th scope="col">Link</th>
                         <th scope="col">Ações</th>
                     </tr>
                 </thead>
@@ -52,6 +53,8 @@
                             @else
                             <td>-</td>
                             @endif
+                            <td>{{ $object->link }}</td>
+
                             <td>
                                 <?php 
                                     $detail = '/admin/objectDetailEvaluate/'.$object->id;
