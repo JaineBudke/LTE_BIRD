@@ -349,8 +349,7 @@ class ObjectController extends Controller
 
         } else {
 
-            \Session::flash('mensagem_erro', 'Você precisa efetuar login para salvar um recurso!');            
-            return Redirect::to('/explore');
+            return Redirect::to('/login');
 
         }
 
