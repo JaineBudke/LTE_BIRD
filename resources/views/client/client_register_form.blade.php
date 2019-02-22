@@ -74,7 +74,7 @@
                                         <div class="form-group form-float">
                                             <div class="form-line">
                                                 <label>Selecione a imagem correspondente ao recurso</label>
-                                                <input type="file" name="image" id="image">
+                                                <input type="file" name="image" id="image" accept=".png, .jpg, .jpeg">
                                             </div>
                                         </div>
                                         <div class="form-group form-float">

@@ -79,7 +79,7 @@
                                                     <img src="{{ asset('images/padrao-objeto.jpg') }}" width="100" height="100">
                                                 @endif
                                                 <br><label>Deseja alterar a imagem? Selecione um arquivo abaixo.</label>
-                                                <input type="file" name="image" id="image">
+                                                <input type="file" name="image" id="image" accept=".png, .jpg, .jpeg">
                                             </div>
                                         </div>
                                         <div class="form-group form-float">
