@@ -99,8 +99,10 @@
                                             <label for="md_checkbox_audiovisual">Audiovisual</label>
                                             <input type="checkbox" value="ebook" name="recurso2" id="md_checkbox_ebook" class="filled-in chk-col-blue-grey" />
                                             <label for="md_checkbox_ebook">e-book</label>
+                                            <input type="checkbox" value="experimento" name="recurso12" id="md_checkbox_experimento" class="filled-in chk-col-blue-grey" />
+                                            <label for="md_checkbox_experimento">Experimento prático</label>
                                             <input type="checkbox" value="fotografia" name="recurso3" id="md_checkbox_fotografia" class="filled-in chk-col-blue-grey" />
-                                            <label for="md_checkbox_fotografia">Fotografia</label>
+                                            <label for="md_checkbox_fotografia">Fotografia</label><br>
                                             <input type="checkbox" value="ilustracao" name="recurso4" id="md_checkbox_ilustracao" class="filled-in chk-col-blue-grey" />
                                             <label for="md_checkbox_ilustracao">Ilustração</label>
                                             <input type="checkbox" value="infografico" name="recurso5" id="md_checkbox_infografico" class="filled-in chk-col-blue-grey" />
@@ -110,15 +112,13 @@
                                             <input type="checkbox" value="podcast" name="recurso7" id="md_checkbox_podcast" class="filled-in chk-col-blue-grey" />
                                             <label for="md_checkbox_podcast">Podcast</label>
                                             <input type="checkbox" value="realidadeAumentada" name="recurso8" id="md_checkbox_realidade_aumentada" class="filled-in chk-col-blue-grey" />
-                                            <label for="md_checkbox_realidade_aumentada">Realidade Aumentada</label>
+                                            <label for="md_checkbox_realidade_aumentada">Realidade Aumentada</label><br>
                                             <input type="checkbox" value="realidadeVirtual" name="recurso9" id="md_checkbox_realidade_virtual" class="filled-in chk-col-blue-grey" />
                                             <label for="md_checkbox_realidade_virtual">Realidade Virtual</label>
                                             <input type="checkbox" value="simulacao" name="recurso10" id="md_checkbox_simulacao" class="filled-in chk-col-blue-grey" />
                                             <label for="md_checkbox_simulacao">Simulação</label>
                                             <input type="checkbox" value="sequencia" name="recurso11" id="md_checkbox_sequencia" class="filled-in chk-col-blue-grey" />
                                             <label for="md_checkbox_sequencia">Sequência didática</label>
-                                            <input type="checkbox" value="experimento" name="recurso12" id="md_checkbox_experimento" class="filled-in chk-col-blue-grey" />
-                                            <label for="md_checkbox_experimento">Experimento prático</label>
 
                                         </div>   
                                         
