@@ -56,7 +56,7 @@
                                     <fieldset id="page1">
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="title" id="title" >
+                                                <input type="text" maxlength="80" class="form-control" name="title" id="title" >
                                                 <label class="form-label">Titulo do Objeto</label>
                                             </div>
                                         </div>
@@ -68,14 +68,14 @@
                                         </div>
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="link" id="link">
+                                                <input type="text" maxlength="300" class="form-control" name="link" id="link">
                                                 <label class="form-label">Link de acesso ao Objeto</label>
                                             </div>
                                         </div>
                                         <br>
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <textarea rows="5" class="form-control" name="description" id="description"></textarea>
+                                                <textarea rows="5"  maxlength="500" class="form-control" name="description" id="description"></textarea>
                                                 <label class="form-label">Descrição do recurso</label>
                                             </div>
                                         </div>
