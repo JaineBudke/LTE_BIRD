@@ -381,7 +381,7 @@ body {
     .more-info-icon {
         background-color: transparent;
         border-radius: 100%;
-        width: 37px;
+        /*width: 0px;*/
         height: 37px;
         background-size: 100% 100%;
         background-repeat:no-repeat;
@@ -453,3 +453,58 @@ body {
         color: white;
         background-color:  #555B7A;
     }
+
+    /* ===== HOME JONAS =====*/
+    .home-initial-section{
+        width: 100vw;
+
+
+    }
+    .marg-bot-40{
+        margin-bottom: 40px;
+    }
+
+    .teste{
+        margin-right: 30px;
+    }
+
+    .li-logo-mobi{
+        margin-right: 52px;
+        margin-top: -2px;
+    }
+
+    .logo-scrolled{
+        display: none !important;
+    }
+
+    .font-0{
+        font-weight: 100 !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        .logo-scrolled{
+            display: block !important;
+        }
+    
+        .more-info-icon {
+            background-color: transparent;
+            border-radius: 100%;
+            /*width: none;*/
+            height: 37px;
+            background-size: 100% 100%;
+            background-repeat:no-repeat;
+            cursor: pointer;
+        }
+
+        .center-mobile{
+            text-align: center;
+        }
+
+        .home-initial-section{
+            margin-top: 30px;
+        }
+      }
+
+
+     
