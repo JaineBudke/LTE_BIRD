@@ -265,6 +265,14 @@ class ObjectController extends Controller
         $object->status = 0;
         $object->update();
 
+
+        // atualizando tabela log_book
+        $logbook = new Log_book();
+        $logbook->event = "Recurso #".$object->id." deletado";
+        $logbook->id_user = auth()->user()->id; 
+        $logbook->id_object = $object->id;
+        $logbook->save();
+
     }
 
     /**
@@ -509,7 +517,7 @@ class ObjectController extends Controller
                             ['object_types.type', $whereTipoRec, $tipoRec],    
                             ['age_range.age', $whereFaixaEta, $faixaEta],
                         ])
-                        ->paginate(10);
+                        ->paginate(12);
 
         if( Auth::check() ){
             $saved_object = $saved_object->where('id_user', '=', auth()->user()->id )->get();  
@@ -585,7 +593,7 @@ class ObjectController extends Controller
                         ['age_range.age', $whereAno, $ano],
                         ['thematic_unit.thematic', $whereUnidTema, $unidTem],
                     ])
-                    ->paginate(10);
+                    ->paginate(12);
 
         if( Auth::check() ){
             $saved_object = $saved_object->where('id_user', '=', auth()->user()->id )->get();  

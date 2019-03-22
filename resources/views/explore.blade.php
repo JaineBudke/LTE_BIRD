@@ -119,6 +119,7 @@
 						</form>
 						</div>
 						<!-- FIM DO FORMULARIO DO ENSINO INFANTIL -->
+
 						@else
 					<div class="col-md-12" style="border: 0.1em solid #d0d0d0">
 
@@ -264,6 +265,8 @@
 							</form>
 							</div>
 							<!-- FIM DO FORMULARIO DO ENSINO FUNDAMENTAL I -->
+
+							
 						@endif
 
 					</div>
@@ -323,7 +326,7 @@
                                             <center>
                                                 <?php $saved_obj = false;  ?>
                                                 <div class="col-md-3"></div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 col-xs-6">
                                                 @if( Auth::check() )
                                                     @foreach( $saved_object as $saved )
                                                         @if( $saved != null )
@@ -352,7 +355,7 @@
                                                 <?php 
                                                     $id_block = 'more-info'+$count;
                                                     ?>
-                                                <div onclick="objectDetail( {{ $id_block }} )" class="col-md-2 more-info-icon"><i class="fa fa-info-circle" style="color: #4d4d4d; font-size: 2em"></i></div>
+                                                <div onclick="objectDetail( {{ $id_block }} )" class="col-md-2 col-xs-6 more-info-icon"><i class="fa fa-info-circle" style="color: #4d4d4d; font-size: 2em"></i></div>
 
                                                 
                                                 <div id="{{ $id_block }}" title="{{ $object->title }}" style="display: none">
@@ -381,7 +384,7 @@
             
         	<br><br><br>
 			<center>
-			{{ $objects->render() }}
+			{{ $objects->links() }}
 			</center>
 			<br><br><br>
     	</div>

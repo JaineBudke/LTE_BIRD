@@ -54,6 +54,12 @@
             <div class="attr-nav">
                 <ul>
                 @if (Auth::guest())
+                <li class="li-logo-mobi">
+                    <a class="navbar-brand" href="{{ url('/') }}">
+                        <img src="{{ asset('images/logo-mobi-3.png') }}" class="logo logo-scrolled t" alt="">
+                    </a>    
+                </li>
+                
                     <li><a href="{{ url('/login') }}">Entrar</a></li>
                     <li><a href="{{ url('/register') }}">Cadastrar</a></li>
                 @else
@@ -96,17 +102,21 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ asset('images/logo.png') }}" class="logo logo-display" alt="">
-                    <img src="{{ asset('images/footer-logo.png') }}" class="logo logo-scrolled" alt="">
+                   <img src="{{ asset('images/logo.png') }}" class="logo logo-display" alt=""> 
+                <!--<img src="{{ asset('images/logo-mobi-3.png') }}" class="logo logo-scrolled t" alt=""> -->
+                   
+                   <!-- <img src="{{ asset('images/logo-mobi-3.png') }}" class="logo logo-scrolled t" alt=""> -->
+                  <!-- <img src="{{ asset('images/logo-mobi-3.png') }}" class="logo logo-scrolled" alt=""> -->
+          
                 </a>
             </div>
 
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav navbar-center">
-                    <li><a href="{{ url('/') }}">Início</a></li>                    
-                    <li><a href="{{ url('/about') }}">Conheça o BIRD</a></li>
-                    <li><a href="{{ url('/explore') }}">Explore</a></li>
-                    <li><a href="{{ url('/contact') }}">Contato</a></li>
+                    <li><a class="font-0" href="{{ url('/') }}">Início</a></li>                    
+                    <li><a class="font-0" href="{{ url('/about') }}">Conheça o BIRD</a></li>
+                    <li><a class="font-0" href="{{ url('/explore') }}">Explore</a></li>
+                    <li><a class="font-0" href="{{ url('/contact') }}">Contato</a></li>
                 </ul>
             </div>
 
@@ -150,9 +160,9 @@
 
 
                             <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-footer">
+                             <!--   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-footer">
                                     <i class="fa fa-bars"></i>
-                                </button>
+                                </button>-->
                                 <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ asset('images/logo.png') }}" class="logo" alt=""></a>
                             </div>
                             
@@ -163,7 +173,7 @@
                 <div class="col-md-12">
                     <div class="main_footer text-center p-top-40 p-bottom-30">
                         <p class="wow fadeInRight" data-wow-duration="1s">
-                            Desenvolvido por: Laboratório de Tecnologia Educacional (LTE) 
+                            Desenvolvido por: <a href="http://lte.ce.ufrn.br/" target="_blank"> Laboratório de Tecnologia Educacional (LTE)</a> 
                         </p>
                     </div>
                 </div>
