@@ -150,3 +150,7 @@ Route::get('/dashboard', 'UserController@listSaveObjects');
 // mostrar detalhes dos recursos
 Route::any('/client/objectDetail/{id}', 'UserController@showObjectDetail');
 
+
+Route::get ( '/redirect/{service}', 'Auth/LoginController@redirect' );
+
+
