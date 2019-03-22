@@ -67,26 +67,26 @@
                                     <fieldset id="page1">
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="title" id="title">
+                                                <input type="text" maxlength="100" class="form-control" name="title" id="title">
                                                 <label class="form-label">Titulo do recurso</label>
                                             </div>
                                         </div>
                                         <div class="form-group form-float">
                                             <div class="form-line">
                                                 <label>Selecione a imagem correspondente ao recurso</label>
-                                                <input type="file" name="image" id="image">
+                                                <input type="file" name="image" id="image" accept=".png, .jpg, .jpeg">
                                             </div>
                                         </div>
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" class="form-control" name="link" id="link">
+                                                <input type="text" maxlength="300" class="form-control" name="link" id="link">
                                                 <label class="form-label">Link de acesso ao recurso</label>
                                             </div>
                                         </div>
                                         <br>
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <textarea rows="5" class="form-control" name="description" id="description"></textarea>
+                                                <textarea rows="5" maxlength="500" class="form-control" name="description" id="description"></textarea>
                                                 <label class="form-label">Descrição do recurso</label>
                                             </div>
                                         </div>
@@ -99,8 +99,10 @@
                                             <label for="md_checkbox_audiovisual">Audiovisual</label>
                                             <input type="checkbox" value="ebook" name="recurso2" id="md_checkbox_ebook" class="filled-in chk-col-blue-grey" />
                                             <label for="md_checkbox_ebook">e-book</label>
+                                            <input type="checkbox" value="experimento" name="recurso12" id="md_checkbox_experimento" class="filled-in chk-col-blue-grey" />
+                                            <label for="md_checkbox_experimento">Experimento prático</label>
                                             <input type="checkbox" value="fotografia" name="recurso3" id="md_checkbox_fotografia" class="filled-in chk-col-blue-grey" />
-                                            <label for="md_checkbox_fotografia">Fotografia</label>
+                                            <label for="md_checkbox_fotografia">Fotografia</label><br>
                                             <input type="checkbox" value="ilustracao" name="recurso4" id="md_checkbox_ilustracao" class="filled-in chk-col-blue-grey" />
                                             <label for="md_checkbox_ilustracao">Ilustração</label>
                                             <input type="checkbox" value="infografico" name="recurso5" id="md_checkbox_infografico" class="filled-in chk-col-blue-grey" />
@@ -110,11 +112,14 @@
                                             <input type="checkbox" value="podcast" name="recurso7" id="md_checkbox_podcast" class="filled-in chk-col-blue-grey" />
                                             <label for="md_checkbox_podcast">Podcast</label>
                                             <input type="checkbox" value="realidadeAumentada" name="recurso8" id="md_checkbox_realidade_aumentada" class="filled-in chk-col-blue-grey" />
-                                            <label for="md_checkbox_realidade_aumentada">Realidade Aumentada</label>
+                                            <label for="md_checkbox_realidade_aumentada">Realidade Aumentada</label><br>
                                             <input type="checkbox" value="realidadeVirtual" name="recurso9" id="md_checkbox_realidade_virtual" class="filled-in chk-col-blue-grey" />
                                             <label for="md_checkbox_realidade_virtual">Realidade Virtual</label>
                                             <input type="checkbox" value="simulacao" name="recurso10" id="md_checkbox_simulacao" class="filled-in chk-col-blue-grey" />
                                             <label for="md_checkbox_simulacao">Simulação</label>
+                                            <input type="checkbox" value="sequencia" name="recurso11" id="md_checkbox_sequencia" class="filled-in chk-col-blue-grey" />
+                                            <label for="md_checkbox_sequencia">Sequência didática</label>
+
                                         </div>   
                                         
                                         <br><br>
@@ -180,7 +185,7 @@
                                                 <br><input type="checkbox" value="Traços, sons, cores e formas" name="campo3" id="ce_md_checkbox3" class="check1 filled-in chk-col-blue-grey" value="3" />
                                                 <label for="ce_md_checkbox3">Traços, sons, cores e formas</label>
                                                 <br><input type="checkbox" value="Oralidade e escrita" name="campo4" id="ce_md_checkbox4" class="filled-in chk-col-blue-grey" value="4"/>
-                                                <label for="ce_md_checkbox4">Oralidade e escrita</label>
+                                                <label for="ce_md_checkbox4">Escuta, fala, pensamento e imaginação</label>
                                                 <br><input type="checkbox" value="Espaços, tempos, quantidades, relação e transformações" name="campo5" id="ce_md_checkbox5" class="filled-in chk-col-blue-grey" value="5"/>
                                                 <label for="ce_md_checkbox5">Espaços, tempos, quantidades, relação e transformações</label>
                                             </div>

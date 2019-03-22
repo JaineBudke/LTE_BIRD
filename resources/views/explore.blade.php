@@ -58,7 +58,7 @@
 								        <option value="O eu, o outro e nós" <?php if( $campoExp == "O eu, o outro e nós" ) echo 'selected="selected"';?>>O eu, o outro e nós</option>
 								        <option value="Corpo, gesto e movimentos" <?php if( $campoExp == "Corpo, gesto e movimentos" ) echo 'selected="selected"';?>>Corpo, gesto e movimentos</option>
 										<option value="Traços, sons, cores e formas" <?php if( $campoExp == "Traços, sons, cores e formas" ) echo 'selected="selected"';?>>Traços, sons, cores e formas</option>
-										<option value="Oralidade e escrita" <?php if( $campoExp == "Oralidade e escrita" ) echo 'selected="selected"';?>>Oralidade e escrita</option>
+										<option value="Escuta, fala, pensamento e imaginação" <?php if( $campoExp == "Escuta, fala, pensamento e imaginação" ) echo 'selected="selected"';?>>Escuta, fala, pensamento e imaginação</option>
 										<option value="Espaços, tempos, quantidades, relação e transformações" <?php if( $campoExp == "Espaços, tempos, quantidades, relação e transformações" ) echo 'selected="selected"';?>>Espaços, tempos, quantidades, relação e transformações</option>
 							      	</select>
 						   		</div>
@@ -88,7 +88,10 @@
 								        <option value="realidadeAumentada" <?php if( $tipoRec == "realidadeAumentada" ) echo 'selected="selected"';?>>Realidade Aumentada</option>
 								        <option value="realidadeVirtual" <?php if( $tipoRec == "realidadeVirtual" ) echo 'selected="selected"';?>>Realidade Virtual</option>
 								        <option value="simulacao" <?php if( $tipoRec == "simulacao" ) echo 'selected="selected"';?>>Simulação</option>
-							      	</select>
+										<option value="sequencia" <?php if( $tipoRec == "sequencia" ) echo 'selected="selected"';?>>Sequência didática</option>
+										<option value="experimento" <?php if( $tipoRec == "experimento" ) echo 'selected="selected"';?>>Experimento prático</option>
+							      		
+									</select>
 						    	</div>
 
 								<div class="form-group col-md-6">
@@ -378,7 +381,7 @@
             
         	<br><br><br>
 			<center>
-			{{ $objects->links() }}
+			{{ $objects->render() }}
 			</center>
 			<br><br><br>
     	</div>
