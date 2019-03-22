@@ -6,7 +6,7 @@
 @section('header')
 <section>
     <!-- Header -->
-    <div style="width: 100vw">
+    <div class="home-initial-section">
         <img src="{{ asset('images/homebg-7.png') }}">
     </div>
 </section>
@@ -20,7 +20,7 @@
         <div class="row text-center">
             <div>
                 <div class="col-md-2 col-sm-6"></div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-6 marg-bot-40">
                     <div>
                         <i class="fa fa-folder" style="color: #fd840d; font-size: 3em"></i>
                         <label>
@@ -29,7 +29,7 @@
                             </label>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-6 marg-bot-40">
                     <div>
                         <i class="fa fa-users" style="color: #fd840d; font-size: 3em"></i>
                         <label>
@@ -102,7 +102,7 @@
                                             <center>
                                                 <?php $saved_obj = false;  ?>
                                                 <div class="col-md-3"></div>
-                                                <div class="col-md-3">
+                                                <div class="col-md-3 col-xs-6">
                                                 @if( Auth::check() )
                                                     @foreach( $saved_object as $saved )
                                                         @if( $saved != null )
@@ -127,7 +127,7 @@
                                                 <?php 
                                                     $id_block = 'more-info'+$count;
                                                     ?>
-                                                <div onclick="objectDetail( {{ $id_block }} )" class="col-md-2 more-info-icon"><i class="fa fa-info-circle" style="color: #4d4d4d; font-size: 2em"></i></div>
+                                                <div onclick="objectDetail( {{ $id_block }} )" class="col-md-2 col-xs-6 more-info-icon"><i class="fa fa-info-circle" style="color: #4d4d4d; font-size: 2em"></i></div>
 
                                                 
                                                 <div id="{{ $id_block }}" title="{{ $object->title }}" style="display: none">
@@ -174,11 +174,11 @@
         <div class="row">
 
             <div class="col-lg-6 col-sm-12 card">
-                <div class="row" class="no-gutters">
-                    <div class="col-lg-3">
+                <div class="row marg-bot-40" class="no-gutters">
+                    <div class="col-lg-3 text-center">
                         <i class="fa fa-plane" style="color: #555B7A; font-size: 5em"></i>
                     </div>
-                    <div class="col-lg-9">
+                    <div class="col-lg-9 center-mobile">
                         <div class="card-block px-2">
                             <h4 class="card-title">Alcance novos ares nas suas aulas!</h4>
                             <p class="card-text">Adicione recursos digitais a elas.</p>
@@ -189,11 +189,11 @@
 
 
             <div class="col-lg-6 col-sm-12 card">
-                <div class="row" class="no-gutters">
-                    <div class="col-lg-3">
+                <div class="row marg-bot-40" class="no-gutters">
+                    <div class="col-lg-3 text-center">
                         <i class="fa fa-save" style="color: #555B7A; font-size: 5em"></i>
                     </div>
-                    <div class="col-lg-9">
+                    <div class="col-lg-9 center-mobile">
                         <div class="card-block px-2">
                             <h4 class="card-title">Salve seus recursos favoritos!</h4>
                             <p class="card-text">Acesso posterior facilitado.</p>
@@ -202,39 +202,42 @@
                 </div>
             </div>
 
+        
+
+    
+            
+
         </div>
-
-        <div class="row">
-
-        <br><br>
-        <div class="col-lg-6 col-sm-12 card">
-            <div class="row" class="no-gutters">
-                <div class="col-lg-3">
+<div class="row">
+<div class="col-lg-6 col-sm-12 card">
+             <div class="row marg-bot-40" class="no-gutters">
+                <div class="col-lg-3 text-center">
                     <i class="fa fa-search" style="color: #555B7A; font-size: 5em"></i>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-9 center-mobile">
                     <div class="card-block px-2">
                         <h4 class="card-title">Encontre seu recurso ideal!</h4>
                         <p class="card-text">O BIRD te ajuda a buscá-los.</p>
                     </div>
                 </div>
             </div>
-        </div>
+</div>
 
-
-        <div class="col-lg-6 col-sm-12 card">
-            <div class="row" class="no-gutters">
-                <div class="col-lg-3">
-                    <i class="fa fa-upload" style="color: #555B7A; font-size: 5em"></i>
-                </div>
-                <div class="col-lg-9">
-                    <div class="card-block px-2">
-                        <h4 class="card-title">Registre seus recursos de aprendizagem</h4>
-                        <p class="card-text">Disponibilize suas produções.</p>
+            <div class="col-lg-6 col-sm-12 card">
+                <div class="row marg-bot-40" class="no-gutters">
+                    <div class="col-lg-3 text-center">
+                        <i class="fa fa-upload" style="color: #555B7A; font-size: 5em"></i>
+                    </div>
+                    <div class="col-lg-9 center-mobile">
+                        <div class="card-block px-2">
+                            <h4 class="card-title">Registre seus recursos de aprendizagem</h4>
+                            <p class="card-text">Disponibilize suas produções.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+</div>
+
 
         </div>
 
