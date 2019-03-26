@@ -101,8 +101,8 @@
 										<option value="medio" <?php if( $nivelAcess == "medio" ) echo 'selected="selected"';?>>Médio</option>
 										<option value="alto"  <?php if( $nivelAcess == "alto" ) echo 'selected="selected"';?>>Alto</option>
 									</select>
+									<i class="fa fa-question-circle">Níveis de acessibilidade</i>
 								</div>
-
 						  	</div>
 
 
