@@ -491,3 +491,21 @@ function setProfileImage(){
     });
 
 }
+
+
+function accessibilityDescription( ){
+    
+    
+    $( "#description" ).dialog({
+        resizable: false,
+        height: "auto",
+        width: 500,
+        modal: true,
+        buttons: {
+            'Fechar': function() {        
+                $( this ).dialog( "close" );       
+            }
+        }
+    });
+
+}
