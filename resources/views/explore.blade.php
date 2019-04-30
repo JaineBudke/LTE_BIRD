@@ -97,12 +97,23 @@
 								<div class="form-group col-md-6">
 									<select id="inputNivelAcess" class="form-control explore-select" name="nivelAcess">
 										<option value="nivel" selected>Nível de acessibilidade</option>
-										<option value="pouco" <?php if( $nivelAcess == "pouco" ) echo 'selected="selected"';?>>Pouco</option>
-										<option value="medio" <?php if( $nivelAcess == "medio" ) echo 'selected="selected"';?>>Médio</option>
-										<option value="alto"  <?php if( $nivelAcess == "alto" ) echo 'selected="selected"';?>>Alto</option>
+										<option value="pouco" <?php if( $nivelAcess == "pouco" ) echo 'selected="selected"';?>>Pouca</option>
+										<option value="medio" <?php if( $nivelAcess == "medio" ) echo 'selected="selected"';?>>Média</option>
+										<option value="alto"  <?php if( $nivelAcess == "alto" ) echo 'selected="selected"';?>>Alta</option>
 									</select>
-								</div>
+									<a onclick="accessibilityDescription()"><i class="fa fa-question-circle">Entenda o significado de cada nível</i></a>
 
+									<div id="description" title="Descrição dos níveis de acessibilidade" style="display: none">
+										<h4>Nível A (Pouca acessibilidade):</h4>
+										<h5>Apresentam barreiras para algum tipo de usuário, em alguma situação.</h5><br>
+
+										<h4>Nível AA (Média acessibilidade):</h4>
+										<h5>Apresentam um canal de comunicação simples e acessível com os usuários. Interface simples e autoexplicativa.</h5><br>
+
+										<h4>Nível AAA (Alta acessibilidade):</h4>
+										<h5>Fornece alterantivas ao conteúdo sonoro e visual. Design responsivo e adaptativo. Objetos aninhados.</h5>
+									</div>
+								</div>
 						  	</div>
 
 
