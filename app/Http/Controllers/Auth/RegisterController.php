@@ -77,4 +77,17 @@ class RegisterController extends Controller
 	    'status' => 1,
         ]);
     }
+
+   
+    protected function social_accounts(array $data){
+	return SocialAccount::create([
+	    'provider_user_id' => $data['provider_user_id'],
+	    'provider' => $data['provider'],
+
+	]);
+    }
+    
+
+
+
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b9e996addcc7ace248c0519d9c52bf1",
+    "content-hash": "d51056653e07dee43fe261913241c052",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -676,16 +676,16 @@
         },
         {
             "name": "laravel/socialite",
-            "version": "v3.2.0",
+            "version": "v3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/socialite.git",
-                "reference": "7194c0cd9fb2ce449669252b8ec316b85b7de481"
+                "reference": "79316f36641f1916a50ab14d368acdf1d97e46de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/socialite/zipball/7194c0cd9fb2ce449669252b8ec316b85b7de481",
-                "reference": "7194c0cd9fb2ce449669252b8ec316b85b7de481",
+                "url": "https://api.github.com/repos/laravel/socialite/zipball/79316f36641f1916a50ab14d368acdf1d97e46de",
+                "reference": "79316f36641f1916a50ab14d368acdf1d97e46de",
                 "shasum": ""
             },
             "require": {
@@ -735,7 +735,7 @@
                 "laravel",
                 "oauth"
             ],
-            "time": "2018-10-18T03:39:04+00:00"
+            "time": "2018-12-21T14:06:32+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -3511,6 +3511,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2017-06-30T09:13:00+00:00"
         },
         {
