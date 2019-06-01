@@ -150,3 +150,19 @@ Route::get('/dashboard', 'UserController@listSaveObjects');
 // mostrar detalhes dos recursos
 Route::any('/client/objectDetail/{id}', 'UserController@showObjectDetail');
 
+
+Route::get ( '/redirect/{service}', 'Auth/LoginController@redirect' );
+
+Route::get('/teste', function () {
+    return view('teste');
+});
+
+Route::get('/privacy', function () {
+    return view('privacy');
+});
+
+
+// Social login providers...
+Route::get('/provider/{provider}', 'Auth\LoginController@redirectToProvider')->name('redirectToProvider');
+Route::get('/provider/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+

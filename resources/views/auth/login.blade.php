@@ -26,8 +26,35 @@
             <div >
                 <!--<div class="panel-heading">Entrar</div>-->
 
+		<div class="row">
+
+                        <div class="col-md-5 col-md-offset-1">
+                            <center>
+                            <div class="btn-group" >
+                                <a class='btn btn-primary disabled'><i class="fa fa-facebook" style="width:16px; height:16px"></i></a>
+                                <a class='btn btn-primary ' href="{{route('redirectToProvider', ['facebook'])}}" style="width:14em">Entrar com o Facebook</a>
+                            </div>
+                            </center>
+                        </div>
+
+                        <div class="col-md-5">
+                            <center>
+                            <div class="btn-group" >
+                                <a class='btn btn-danger disabled'><i class="fa fa-google-plus" style="width:16px; height:16px"></i></a>
+                                <a class='btn btn-danger' href="{{route('redirectToProvider', ['facebook'])}}" style="width:14em;">Entrar com o Google</a>
+                            </div>
+                            </center>
+                        </div>
+
+
+                    </div>
+
+                    <br><br>
+		
 
                 <div class="panel-body">
+		
+		    
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
