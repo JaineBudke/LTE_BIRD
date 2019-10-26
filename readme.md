@@ -6,6 +6,7 @@ Criação de um acervo multimídia para promover a inovação das práticas peda
 no uso de recursos tecnológicos digitais. O BIRD se fundamenta nos princípios dos
 Recursos Educacionais Abertos (REA), que dizem respeito ao acesso, uso e reuso de
 bens educacionais comuns. 
+Desenvolvido para o Laboratório de Tecnologia Educacional (LTE) do Centro de Educação (CE), UFRN.
 
 
 ## Diferenciais do projeto
@@ -35,7 +36,4 @@ $ php artisan migrate
 ### rode o programa
 $ php artisan serve
 ```
-
-## Autoria
-Desenvolvido por Jaine Rannow Budke, 2018.
 
